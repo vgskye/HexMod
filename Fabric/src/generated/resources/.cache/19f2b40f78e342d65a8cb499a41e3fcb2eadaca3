@@ -1,4 +1,4 @@
-// 1.20.1	2023-11-25T15:38:48.2172725	Hex Casting/Loot Tables
+// 1.20.1	2023-11-26T02:58:20.49093	Hex Casting/Loot Tables
 95be0cf7f277257671631929462131b6d611119a data\hexcasting\loot_tables\inject\amethyst_cluster.json
 ecaeb4d5703a7aa206627ed38ee71aeb7e93d688 data\hexcasting\loot_tables\blocks\impetus\rightclick.json
 a4e0194d8966a24531e43e04437cdb2a96456898 data\hexcasting\loot_tables\blocks\edified_tile.json
@@ -23,9 +23,9 @@ b706c8a064f717c57104c48ea42aa860b45cf7a4 data\hexcasting\loot_tables\blocks\amet
 8ea8fd68719a960c2e132df441564a70c0e376a8 data\hexcasting\loot_tables\blocks\amethyst_pillar.json
 df5496da8e48b61a171bc7a3936495c016cc002e data\hexcasting\loot_tables\blocks\directrix\empty.json
 f1145860d80ff053970b1ad4f3b2f5d9f28e7c73 data\hexcasting\loot_tables\blocks\directrix\boolean.json
-147e0739a712a9050856cebcad1757b3f418f647 data\hexcasting\loot_tables\blocks\edified_trapdoor.json
-bedbc2bd04f79372aedea64214ba2ea49cde9640 data\hexcasting\loot_tables\blocks\amethyst_edified_leaves.json
 c426245d51f1e0fa0db7c4bfb454284d75506c9c data\hexcasting\loot_tables\blocks\quenched_allay_bricks.json
+bedbc2bd04f79372aedea64214ba2ea49cde9640 data\hexcasting\loot_tables\blocks\amethyst_edified_leaves.json
+147e0739a712a9050856cebcad1757b3f418f647 data\hexcasting\loot_tables\blocks\edified_trapdoor.json
 dc4c6d270b8e93d05ac8ddeb1b9dd1d64828ac5d data\hexcasting\loot_tables\blocks\stripped_edified_wood.json
 2ad288784b0dc106ace2e6e0a40669f83476c414 data\hexcasting\loot_tables\blocks\slate.json
 1dd4268edf7d6fa247013ab45541c7bfb915eef8 data\hexcasting\loot_tables\blocks\amethyst_bricks_small.json
