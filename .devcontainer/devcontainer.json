@@ -5,7 +5,8 @@
 			"version": "none",
 			"installMaven": "false",
 			"installGradle": "false"
-		}
+		},
+		"ghcr.io/devcontainers/features/sshd:1": {}
 	},
 	"updateContentCommand": ["./gradlew", "ideaSyncTask"]
 }
