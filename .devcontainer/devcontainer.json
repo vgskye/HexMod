@@ -1,3 +1,7 @@
+// Configuration for devcontainers. Allows using GitHub Codespaces to develop and test
+// If you're using codespaces a lot, this config will make prebuilds do part of the project sync
+// noVNC is available for runClient; should be visible under ports on IDEA
+// Minecraft mouse input is finicky with noVNC here; setting sensitivity very low and turning raw input off helps
 {
 	"image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
 	"features": {
