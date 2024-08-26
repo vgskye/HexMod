@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://maven.neoforged.net' }
         maven {
             url = 'https://repo.spongepowered.org/repository/maven-public/'
             content { includeGroup "org.spongepowered" }
@@ -8,7 +8,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '6.0.+', changing: true
+        classpath group: 'net.neoforged.gradle', name: 'ForgeGradle', version: '6.0.+', changing: true
         classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
@@ -20,7 +20,7 @@ plugins {
     id "at.petra-k.PKSubprojPlugin"
 }
 
-apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'net.neoforged.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 pkSubproj {
@@ -62,7 +62,7 @@ repositories {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${minecraftVersion}-${forgeVersion}"
+    minecraft "net.neoforged:forge:${minecraftVersion}-${forgeVersion}"
     compileOnly project(":Common")
 
     implementation "thedarkcolour:kotlinforforge:$kotlinForForgeVersion"
