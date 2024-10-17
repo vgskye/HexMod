@@ -1,33 +1,35 @@
 package at.petrak.hexcasting.datagen;
 
-import at.petrak.hexcasting.datagen.recipe.builders.FarmersDelightToolIngredient;
+import java.util.EnumMap;
+
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import java.util.EnumMap;
+import at.petrak.hexcasting.datagen.recipe.builders.FarmersDelightToolIngredient;
 
 public interface IXplatIngredients {
-    Ingredient glowstoneDust();
+	Ingredient glowstoneDust();
 
-    Ingredient leather();
+	Ingredient leather();
 
-    Ingredient ironNugget();
+	Ingredient ironNugget();
 
-    Ingredient goldNugget();
+	Ingredient goldNugget();
 
-    Ingredient copperIngot();
+	Ingredient copperIngot();
 
-    Ingredient ironIngot();
+	Ingredient ironIngot();
 
-    Ingredient goldIngot();
+	Ingredient goldIngot();
 
-    EnumMap<DyeColor, Ingredient> dyes();
+	EnumMap<DyeColor, Ingredient> dyes();
 
-    Ingredient stick();
+	Ingredient stick();
 
-    Ingredient whenModIngredient(Ingredient defaultIngredient, String modid, Ingredient modIngredient);
+	Ingredient whenModIngredient(
+			Ingredient defaultIngredient, String modid, Ingredient modIngredient);
 
-    FarmersDelightToolIngredient axeStrip();
+	FarmersDelightToolIngredient axeStrip();
 
-    FarmersDelightToolIngredient axeDig();
+	FarmersDelightToolIngredient axeDig();
 }

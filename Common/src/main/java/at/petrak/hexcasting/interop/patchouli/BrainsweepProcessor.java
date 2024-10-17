@@ -1,14 +1,15 @@
 package at.petrak.hexcasting.interop.patchouli;
 
-import at.petrak.hexcasting.common.recipe.BrainsweepRecipe;
-import at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry;
 import net.minecraft.client.Minecraft;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+
+import at.petrak.hexcasting.common.recipe.BrainsweepRecipe;
+import at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry;
+
 import org.jetbrains.annotations.Nullable;
 import vazkii.patchouli.api.IComponentProcessor;
 import vazkii.patchouli.api.IVariable;
@@ -16,8 +17,7 @@ import vazkii.patchouli.api.IVariableProvider;
 
 public class BrainsweepProcessor implements IComponentProcessor {
 	private BrainsweepRecipe recipe;
-	@Nullable
-	private String exampleEntityString;
+	@Nullable private String exampleEntityString;
 
 	@Override
 	public void setup(Level level, IVariableProvider vars) {
@@ -71,11 +71,10 @@ public class BrainsweepProcessor implements IComponentProcessor {
 			}
 			case "entityTooltip" -> {
 				Minecraft mc = Minecraft.getInstance();
-				return IVariable.wrapList(this.recipe.entityIn()
-					.getTooltip(mc.options.advancedItemTooltips)
-					.stream()
-					.map(IVariable::from)
-					.toList());
+				return IVariable.wrapList(
+						this.recipe.entityIn().getTooltip(mc.options.advancedItemTooltips).stream()
+								.map(IVariable::from)
+								.toList());
 			}
 			default -> {
 				return null;

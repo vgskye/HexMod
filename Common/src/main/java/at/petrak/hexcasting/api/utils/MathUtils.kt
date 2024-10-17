@@ -10,6 +10,8 @@ object MathUtils {
         =    if (long <= min) min
         else if (long >= max) max
         else                  long
+    @JvmField
+    val DOUBLE_EPSILON: Double = Math.ulp(1.0)
 }
 
 object QuaternionfUtils {

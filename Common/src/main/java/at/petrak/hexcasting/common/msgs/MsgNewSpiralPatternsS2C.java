@@ -1,56 +1,59 @@
 package at.petrak.hexcasting.common.msgs;
 
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
-import io.netty.buffer.ByteBuf;
-import net.minecraft.client.Minecraft;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.resources.ResourceLocation;
+import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import static at.petrak.hexcasting.api.HexAPI.modLoc;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
 
-public record MsgNewSpiralPatternsS2C(UUID playerUUID, List<HexPattern> patterns, int lifetime) implements IMessage {
-    public static final ResourceLocation ID = modLoc("spi_pats_sc");
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
 
-    @Override
-    public ResourceLocation getFabricId() {
-        return ID;
-    }
+import io.netty.buffer.ByteBuf;
 
-    public static MsgNewSpiralPatternsS2C deserialize(ByteBuf buffer) {
-        var buf = new FriendlyByteBuf(buffer);
+public record MsgNewSpiralPatternsS2C(UUID playerUUID, List<HexPattern> patterns, int lifetime)
+		implements IMessage {
+	public static final ResourceLocation ID = modLoc("spi_pats_sc");
 
-        var player = buf.readUUID();
-        var patterns = buf.readCollection(ArrayList::new, buff -> HexPattern.fromNBT(buf.readNbt()));
-        var lifetime = buf.readInt();
+	@Override
+	public ResourceLocation getFabricId() {
+		return ID;
+	}
 
+	public static MsgNewSpiralPatternsS2C deserialize(ByteBuf buffer) {
+		var buf = new FriendlyByteBuf(buffer);
 
-        return new MsgNewSpiralPatternsS2C(player, patterns, lifetime);
-    }
+		var player = buf.readUUID();
+		var patterns = buf.readCollection(ArrayList::new, buff -> HexPattern.fromNBT(buf.readNbt()));
+		var lifetime = buf.readInt();
 
-    @Override
-    public void serialize(FriendlyByteBuf buf) {
-        buf.writeUUID(playerUUID);
-        buf.writeCollection(patterns, (buff, pattern) -> buff.writeNbt(pattern.serializeToNBT()));
-        buf.writeInt(lifetime);
-    }
+		return new MsgNewSpiralPatternsS2C(player, patterns, lifetime);
+	}
 
-    public static void handle(MsgNewSpiralPatternsS2C self) {
-        Minecraft.getInstance().execute(new Runnable() {
-            @Override
-            public void run() {
-                var mc = Minecraft.getInstance();
-                assert mc.level != null;
-                var player = mc.level.getPlayerByUUID(self.playerUUID);
-                var stack = IClientXplatAbstractions.INSTANCE.getClientCastingStack(player);
+	@Override
+	public void serialize(FriendlyByteBuf buf) {
+		buf.writeUUID(playerUUID);
+		buf.writeCollection(patterns, (buff, pattern) -> buff.writeNbt(pattern.serializeToNBT()));
+		buf.writeInt(lifetime);
+	}
 
-                for (var pattern : self.patterns)
-                    stack.addPattern(pattern, self.lifetime);
-            }
-        });
-    }
+	public static void handle(MsgNewSpiralPatternsS2C self) {
+		Minecraft.getInstance()
+				.execute(
+						new Runnable() {
+							@Override
+							public void run() {
+								var mc = Minecraft.getInstance();
+								assert mc.level != null;
+								var player = mc.level.getPlayerByUUID(self.playerUUID);
+								var stack = IClientXplatAbstractions.INSTANCE.getClientCastingStack(player);
+
+								for (var pattern : self.patterns) stack.addPattern(pattern, self.lifetime);
+							}
+						});
+	}
 }

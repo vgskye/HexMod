@@ -1,9 +1,5 @@
 package at.petrak.hexcasting.common.recipe;
 
-import at.petrak.hexcasting.common.recipe.ingredient.StateIngredient;
-import at.petrak.hexcasting.common.recipe.ingredient.StateIngredientHelper;
-import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
-import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -19,16 +15,22 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
+
+import at.petrak.hexcasting.common.recipe.ingredient.StateIngredient;
+import at.petrak.hexcasting.common.recipe.ingredient.StateIngredientHelper;
+import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
+
+import com.google.gson.JsonObject;
 import org.jetbrains.annotations.NotNull;
 
 // God I am a horrible person
 public record BrainsweepRecipe(
-	ResourceLocation id,
-	StateIngredient blockIn,
-	BrainsweepeeIngredient entityIn,
-	long mediaCost,
-	BlockState result
-) implements Recipe<Container> {
+		ResourceLocation id,
+		StateIngredient blockIn,
+		BrainsweepeeIngredient entityIn,
+		long mediaCost,
+		BlockState result)
+		implements Recipe<Container> {
 	public boolean matches(BlockState blockIn, Entity victim, ServerLevel level) {
 		return this.blockIn.test(blockIn) && this.entityIn.test(victim, level);
 	}
@@ -87,7 +89,8 @@ public record BrainsweepRecipe(
 		@Override
 		public @NotNull BrainsweepRecipe fromJson(ResourceLocation recipeID, JsonObject json) {
 			var blockIn = StateIngredientHelper.deserialize(GsonHelper.getAsJsonObject(json, "blockIn"));
-			var villagerIn = BrainsweepeeIngredient.deserialize(GsonHelper.getAsJsonObject(json, "entityIn"));
+			var villagerIn =
+					BrainsweepeeIngredient.deserialize(GsonHelper.getAsJsonObject(json, "entityIn"));
 			var cost = GsonHelper.getAsInt(json, "cost");
 			var result = StateIngredientHelper.readBlockState(GsonHelper.getAsJsonObject(json, "result"));
 			return new BrainsweepRecipe(recipeID, blockIn, villagerIn, cost, result);
