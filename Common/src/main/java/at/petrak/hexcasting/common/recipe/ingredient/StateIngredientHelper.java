@@ -1,9 +1,13 @@
 package at.petrak.hexcasting.common.recipe.ingredient;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
+import com.mojang.serialization.Dynamic;
+import com.mojang.serialization.JsonOps;
 import java.util.*;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtOps;
@@ -16,12 +20,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import com.mojang.serialization.Dynamic;
-import com.mojang.serialization.JsonOps;
-
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
 
 public class StateIngredientHelper {
 	public static StateIngredient of(Block block) {

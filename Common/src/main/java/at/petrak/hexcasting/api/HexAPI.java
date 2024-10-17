@@ -1,8 +1,14 @@
 package at.petrak.hexcasting.api;
 
+import at.petrak.hexcasting.api.addldata.ADMediaHolder;
+import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
+import at.petrak.hexcasting.api.casting.castables.SpecialHandler;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.api.player.Sentinel;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.google.common.base.Suppliers;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -19,15 +25,6 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.addldata.ADMediaHolder;
-import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
-import at.petrak.hexcasting.api.casting.castables.SpecialHandler;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.api.player.Sentinel;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
-import com.google.common.base.Suppliers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;

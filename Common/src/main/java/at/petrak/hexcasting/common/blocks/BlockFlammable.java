@@ -1,12 +1,11 @@
 package at.petrak.hexcasting.common.blocks;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
 
 /** Does absolutely nothing on Fabric; the flammable block registry is for that. */
 public class BlockFlammable extends Block {

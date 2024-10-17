@@ -1,5 +1,9 @@
 package at.petrak.hexcasting.common.recipe;
 
+import at.petrak.hexcasting.common.recipe.ingredient.StateIngredient;
+import at.petrak.hexcasting.common.recipe.ingredient.StateIngredientHelper;
+import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
+import com.google.gson.JsonObject;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -15,12 +19,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
-
-import at.petrak.hexcasting.common.recipe.ingredient.StateIngredient;
-import at.petrak.hexcasting.common.recipe.ingredient.StateIngredientHelper;
-import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
-
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.NotNull;
 
 // God I am a horrible person

@@ -1,10 +1,8 @@
 package at.petrak.hexcasting.api.casting.castables;
 
-import net.minecraft.network.chat.Component;
-
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
-
+import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.Nullable;
 
 /**

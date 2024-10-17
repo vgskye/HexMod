@@ -1,14 +1,11 @@
 package at.petrak.hexcasting.fabric.cc.adimpl;
 
-import java.util.function.Supplier;
-
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
 import at.petrak.hexcasting.api.item.MediaHolderItem;
 import at.petrak.hexcasting.fabric.cc.HexCardinalComponents;
-
 import dev.onyxstudios.cca.api.v3.item.ItemComponent;
+import java.util.function.Supplier;
+import net.minecraft.world.item.ItemStack;
 
 public abstract class CCMediaHolder extends ItemComponent implements ADMediaHolder {
 	public CCMediaHolder(ItemStack stack) {

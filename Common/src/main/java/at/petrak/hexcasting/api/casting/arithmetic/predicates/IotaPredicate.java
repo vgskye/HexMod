@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.api.casting.arithmetic.predicates;
 
-import java.util.List;
-
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.casting.iota.IotaType;
+import java.util.List;
 
 /**
  * Used to determine whether a given iota is an acceptable type for the operator that is storing

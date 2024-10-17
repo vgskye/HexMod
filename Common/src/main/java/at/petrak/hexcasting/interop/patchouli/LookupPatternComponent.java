@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.interop.patchouli;
 
-import java.util.List;
-import java.util.function.UnaryOperator;
-
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.casting.math.HexCoord;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
 import at.petrak.hexcasting.api.mod.HexTags;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import com.google.gson.annotations.SerializedName;
+import com.mojang.datafixers.util.Pair;
+import java.util.List;
+import java.util.function.UnaryOperator;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import vazkii.patchouli.api.IVariable;
 
 /** Grab the pattern from the registry */

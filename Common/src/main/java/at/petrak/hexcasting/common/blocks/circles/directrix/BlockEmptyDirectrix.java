@@ -1,8 +1,10 @@
 package at.petrak.hexcasting.common.blocks.circles.directrix;
 
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
 import java.util.EnumSet;
 import java.util.List;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -15,10 +17,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
 
 public class BlockEmptyDirectrix extends BlockCircleComponent {
 	// Technically the impetus only needs an axis, but all the datagen assumes it has a facing

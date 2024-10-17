@@ -2,10 +2,10 @@ package at.petrak.hexcasting.common.items;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.common.lib.HexSounds;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.network.chat.Component;
@@ -19,8 +19,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.common.lib.HexSounds;
 
 public class ItemLoreFragment extends Item {
 	public static final List<ResourceLocation> NAMES =

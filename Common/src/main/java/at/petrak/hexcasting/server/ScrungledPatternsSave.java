@@ -1,22 +1,19 @@
 package at.petrak.hexcasting.server;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.level.saveddata.SavedData;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.math.EulerPathFinder;
 import at.petrak.hexcasting.api.casting.math.HexDir;
 import at.petrak.hexcasting.api.mod.HexTags;
 import at.petrak.hexcasting.api.utils.HexUtils;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
+import com.mojang.datafixers.util.Pair;
+import java.util.HashMap;
+import java.util.Map;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.saveddata.SavedData;
 import org.jetbrains.annotations.Nullable;
 
 /**

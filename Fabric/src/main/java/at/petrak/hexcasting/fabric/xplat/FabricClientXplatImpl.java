@@ -1,5 +1,16 @@
 package at.petrak.hexcasting.fabric.xplat;
 
+import at.petrak.hexcasting.api.client.ClientCastingStack;
+import at.petrak.hexcasting.common.msgs.IMessage;
+import at.petrak.hexcasting.fabric.cc.HexCardinalComponents;
+import at.petrak.hexcasting.fabric.client.ExtendedTexture;
+import at.petrak.hexcasting.fabric.interop.trinkets.TrinketsApiInterop;
+import at.petrak.hexcasting.interop.HexInterop;
+import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.culling.Frustum;
@@ -17,20 +28,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.AABB;
-
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-
-import at.petrak.hexcasting.api.client.ClientCastingStack;
-import at.petrak.hexcasting.common.msgs.IMessage;
-import at.petrak.hexcasting.fabric.cc.HexCardinalComponents;
-import at.petrak.hexcasting.fabric.client.ExtendedTexture;
-import at.petrak.hexcasting.fabric.interop.trinkets.TrinketsApiInterop;
-import at.petrak.hexcasting.interop.HexInterop;
-import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import org.jetbrains.annotations.Nullable;
 
 public class FabricClientXplatImpl implements IClientXplatAbstractions {

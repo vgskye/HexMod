@@ -1,5 +1,9 @@
 package at.petrak.hexcasting.common.blocks.circles.impetuses;
 
+import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
+import at.petrak.hexcasting.api.casting.iota.EntityIota;
+import at.petrak.hexcasting.common.lib.HexSounds;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
@@ -15,12 +19,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
-
-import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
-import at.petrak.hexcasting.api.casting.iota.EntityIota;
-import at.petrak.hexcasting.common.lib.HexSounds;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import org.jetbrains.annotations.Nullable;
 
 public class BlockRedstoneImpetus extends BlockAbstractImpetus {

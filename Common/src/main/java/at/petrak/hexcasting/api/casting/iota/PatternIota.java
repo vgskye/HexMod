@@ -2,17 +2,6 @@ package at.petrak.hexcasting.api.casting.iota;
 
 import static at.petrak.hexcasting.api.utils.HexUtils.isOfTag;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.function.Supplier;
-
-import net.minecraft.ChatFormatting;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.level.ServerLevel;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.PatternShapeMatch;
@@ -33,7 +22,15 @@ import at.petrak.hexcasting.common.casting.PatternRegistryManifest;
 import at.petrak.hexcasting.common.lib.hex.HexEvalSounds;
 import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
+import java.util.List;
+import java.util.Objects;
+import java.util.function.Supplier;
+import net.minecraft.ChatFormatting;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.level.ServerLevel;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

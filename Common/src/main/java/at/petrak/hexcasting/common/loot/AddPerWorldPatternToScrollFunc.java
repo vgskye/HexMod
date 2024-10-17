@@ -1,7 +1,16 @@
 package at.petrak.hexcasting.common.loot;
 
+import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
+import at.petrak.hexcasting.api.mod.HexTags;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.common.casting.PatternRegistryManifest;
+import at.petrak.hexcasting.common.items.storage.ItemScroll;
+import at.petrak.hexcasting.common.lib.HexLootFunctions;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonSerializationContext;
 import java.util.ArrayList;
-
 import net.minecraft.core.Registry;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
@@ -10,18 +19,6 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-
-import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
-import at.petrak.hexcasting.api.mod.HexTags;
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.common.casting.PatternRegistryManifest;
-import at.petrak.hexcasting.common.items.storage.ItemScroll;
-import at.petrak.hexcasting.common.lib.HexLootFunctions;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonSerializationContext;
 
 /**
  * Slap a random per-world pattern on the scroll.

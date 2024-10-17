@@ -1,7 +1,13 @@
 package at.petrak.hexcasting.datagen;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.common.blocks.circles.BlockEntitySlate;
+import at.petrak.hexcasting.common.lib.HexBlocks;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.common.loot.HexLootHandler;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import at.petrak.paucal.api.datagen.PaucalLootTableSubProvider;
 import java.util.Map;
-
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.MinMaxBounds;
@@ -26,14 +32,6 @@ import net.minecraft.world.level.storage.loot.predicates.*;
 import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.common.blocks.circles.BlockEntitySlate;
-import at.petrak.hexcasting.common.lib.HexBlocks;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.common.loot.HexLootHandler;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-import at.petrak.paucal.api.datagen.PaucalLootTableSubProvider;
 
 public class HexLootTables extends PaucalLootTableSubProvider {
 	public HexLootTables() {

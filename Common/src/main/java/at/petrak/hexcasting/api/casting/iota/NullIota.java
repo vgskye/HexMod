@@ -1,13 +1,11 @@
 package at.petrak.hexcasting.api.casting.iota;
 
+import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
-
-import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

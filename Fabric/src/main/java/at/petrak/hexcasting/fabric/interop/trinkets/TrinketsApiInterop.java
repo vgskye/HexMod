@@ -1,28 +1,24 @@
 package at.petrak.hexcasting.fabric.interop.trinkets;
 
-import java.util.Optional;
-import java.util.UUID;
-
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.item.ItemStack;
-
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-
 import at.petrak.hexcasting.api.misc.DiscoveryHandlers;
 import at.petrak.hexcasting.common.items.HexBaubleItem;
 import at.petrak.hexcasting.common.items.magic.ItemCreativeUnlocker;
 import at.petrak.hexcasting.common.lib.HexItems;
-
 import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketComponent;
 import dev.emi.trinkets.api.TrinketsApi;
 import dev.emi.trinkets.api.client.TrinketRendererRegistry;
+import java.util.Optional;
+import java.util.UUID;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.ItemStack;
 
 public class TrinketsApiInterop {
 	public static void init() {

@@ -1,10 +1,9 @@
 package at.petrak.hexcasting.api.advancements;
 
+import com.google.gson.JsonObject;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-
-import com.google.gson.JsonObject;
 
 public class FailToCastGreatSpellTrigger
 		extends SimpleCriterionTrigger<FailToCastGreatSpellTrigger.Instance> {

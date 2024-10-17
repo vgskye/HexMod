@@ -1,11 +1,9 @@
 package at.petrak.hexcasting.common.blocks.behavior;
 
+import at.petrak.hexcasting.common.lib.HexBlocks;
 import java.util.HashMap;
 import java.util.Map;
-
 import net.minecraft.world.level.block.Block;
-
-import at.petrak.hexcasting.common.lib.HexBlocks;
 
 public class HexStrippables {
 	public static final Map<Block, Block> STRIPPABLES = new HashMap<>();

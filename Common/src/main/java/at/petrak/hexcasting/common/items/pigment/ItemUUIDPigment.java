@@ -1,20 +1,17 @@
 package at.petrak.hexcasting.common.items.pigment;
 
-import java.awt.*;
-import java.util.Random;
-import java.util.UUID;
-
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.addldata.ADPigment;
 import at.petrak.hexcasting.api.item.PigmentItem;
 import at.petrak.hexcasting.api.pigment.ColorProvider;
 import at.petrak.paucal.api.PaucalAPI;
-
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
+import java.awt.*;
+import java.util.Random;
+import java.util.UUID;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
 
 public class ItemUUIDPigment extends Item implements PigmentItem {
 	public ItemUUIDPigment(Properties pProperties) {

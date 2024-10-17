@@ -1,15 +1,5 @@
 package at.petrak.hexcasting.api.casting.eval.env;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.casting.ParticleSpray;
 import at.petrak.hexcasting.api.casting.eval.CastResult;
@@ -23,6 +13,14 @@ import at.petrak.hexcasting.api.mod.HexStatistics;
 import at.petrak.hexcasting.api.pigment.FrozenPigment;
 import at.petrak.hexcasting.common.msgs.*;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.phys.Vec3;
 
 public class StaffCastEnv extends PlayerBasedCastEnv {
 	private final InteractionHand castingHand;

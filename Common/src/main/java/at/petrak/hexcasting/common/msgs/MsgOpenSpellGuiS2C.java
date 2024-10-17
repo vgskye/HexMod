@@ -2,18 +2,15 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.eval.ResolvedPattern;
+import at.petrak.hexcasting.client.gui.GuiSpellcasting;
+import io.netty.buffer.ByteBuf;
 import java.util.List;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
-
-import at.petrak.hexcasting.api.casting.eval.ResolvedPattern;
-import at.petrak.hexcasting.client.gui.GuiSpellcasting;
-
-import io.netty.buffer.ByteBuf;
 
 /**
  * Sent server->client when the player opens the spell gui to request the server provide the current

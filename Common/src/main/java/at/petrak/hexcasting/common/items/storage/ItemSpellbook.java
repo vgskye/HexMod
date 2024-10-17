@@ -2,9 +2,13 @@ package at.petrak.hexcasting.common.items.storage;
 
 import static at.petrak.hexcasting.common.items.storage.ItemFocus.NUM_VARIANTS;
 
+import at.petrak.hexcasting.api.casting.iota.Iota;
+import at.petrak.hexcasting.api.casting.iota.IotaType;
+import at.petrak.hexcasting.api.item.IotaHolderItem;
+import at.petrak.hexcasting.api.item.VariantItem;
+import at.petrak.hexcasting.api.utils.NBTHelper;
 import java.util.List;
 import java.util.stream.Stream;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
@@ -15,13 +19,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.api.casting.iota.Iota;
-import at.petrak.hexcasting.api.casting.iota.IotaType;
-import at.petrak.hexcasting.api.item.IotaHolderItem;
-import at.petrak.hexcasting.api.item.VariantItem;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-
 import org.jetbrains.annotations.Nullable;
 
 public class ItemSpellbook extends Item implements IotaHolderItem, VariantItem {

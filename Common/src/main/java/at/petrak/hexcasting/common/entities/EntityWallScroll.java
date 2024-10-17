@@ -1,5 +1,16 @@
 package at.petrak.hexcasting.common.entities;
 
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.client.render.HexPatternPoints;
+import at.petrak.hexcasting.client.render.RenderLib;
+import at.petrak.hexcasting.common.items.storage.ItemScroll;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.common.lib.HexSounds;
+import at.petrak.hexcasting.common.msgs.MsgNewWallScrollS2C;
+import at.petrak.hexcasting.common.msgs.MsgRecalcWallScrollDisplayS2C;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -22,19 +33,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.client.render.HexPatternPoints;
-import at.petrak.hexcasting.client.render.RenderLib;
-import at.petrak.hexcasting.common.items.storage.ItemScroll;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.common.lib.HexSounds;
-import at.petrak.hexcasting.common.msgs.MsgNewWallScrollS2C;
-import at.petrak.hexcasting.common.msgs.MsgRecalcWallScrollDisplayS2C;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import org.jetbrains.annotations.Nullable;
 
 public class EntityWallScroll extends HangingEntity {

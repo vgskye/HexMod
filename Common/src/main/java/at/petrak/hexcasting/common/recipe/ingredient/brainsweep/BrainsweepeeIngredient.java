@@ -1,8 +1,9 @@
 package at.petrak.hexcasting.common.recipe.ingredient.brainsweep;
 
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.google.gson.JsonObject;
 import java.util.List;
 import java.util.Locale;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -11,10 +12,6 @@ import net.minecraft.util.GsonHelper;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.Nullable;
 
 // Partially based on:

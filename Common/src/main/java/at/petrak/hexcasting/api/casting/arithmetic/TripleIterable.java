@@ -1,7 +1,6 @@
 package at.petrak.hexcasting.api.casting.arithmetic;
 
 import java.util.Iterator;
-
 import org.apache.commons.lang3.function.TriFunction;
 import org.jetbrains.annotations.NotNull;
 

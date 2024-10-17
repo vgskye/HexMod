@@ -1,15 +1,13 @@
 package at.petrak.hexcasting.forge.cap;
 
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.InteractionHand;
-
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
 import at.petrak.hexcasting.forge.network.MsgAltioraUpdateAck;
 import at.petrak.hexcasting.forge.network.MsgPigmentUpdateAck;
 import at.petrak.hexcasting.forge.network.MsgSentinelStatusUpdateAck;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class CapSyncers {
 	@SubscribeEvent

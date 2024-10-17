@@ -1,22 +1,19 @@
 package at.petrak.hexcasting.common.items.magic;
 
+import at.petrak.hexcasting.api.item.MediaHolderItem;
+import at.petrak.hexcasting.api.misc.MediaConstants;
+import at.petrak.hexcasting.api.utils.MathUtils;
+import at.petrak.hexcasting.api.utils.MediaHelper;
+import at.petrak.hexcasting.api.utils.NBTHelper;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.List;
-
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.api.item.MediaHolderItem;
-import at.petrak.hexcasting.api.misc.MediaConstants;
-import at.petrak.hexcasting.api.utils.MathUtils;
-import at.petrak.hexcasting.api.utils.MediaHelper;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-
 import org.jetbrains.annotations.Nullable;
 
 public abstract class ItemMediaHolder extends Item implements MediaHolderItem {

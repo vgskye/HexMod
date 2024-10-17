@@ -1,13 +1,12 @@
 package at.petrak.hexcasting.common.blocks.decoration;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
+import at.petrak.hexcasting.common.lib.HexBlockSetTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
-import at.petrak.hexcasting.common.lib.HexBlockSetTypes;
 
 public class BlockHexTrapdoor extends TrapDoorBlock {
 	public BlockHexTrapdoor(Properties $$0) {

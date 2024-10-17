@@ -1,13 +1,11 @@
 package at.petrak.hexcasting.fabric.mixin;
 
+import at.petrak.hexcasting.common.items.ItemJewelerHammer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.common.items.ItemJewelerHammer;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

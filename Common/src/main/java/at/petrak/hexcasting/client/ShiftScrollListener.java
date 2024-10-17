@@ -1,13 +1,12 @@
 package at.petrak.hexcasting.client;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.world.item.Item;
-
 import at.petrak.hexcasting.api.mod.HexConfig;
 import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.hexcasting.common.msgs.MsgShiftScrollC2S;
 import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.world.item.Item;
 
 public class ShiftScrollListener {
 	private static double mainHandDelta = 0;

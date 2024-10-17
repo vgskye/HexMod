@@ -1,9 +1,19 @@
 package at.petrak.hexcasting.api.casting.circles;
 
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.casting.ParticleSpray;
+import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
+import at.petrak.hexcasting.api.casting.eval.sideeffects.OperatorSideEffect;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingVM;
+import at.petrak.hexcasting.api.casting.mishaps.Mishap;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.common.lib.HexSounds;
+import com.mojang.datafixers.util.Pair;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.UUID;
-
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -16,19 +26,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.casting.ParticleSpray;
-import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
-import at.petrak.hexcasting.api.casting.eval.sideeffects.OperatorSideEffect;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingVM;
-import at.petrak.hexcasting.api.casting.mishaps.Mishap;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.common.lib.HexSounds;
-
 import org.jetbrains.annotations.Contract;
 
 /**

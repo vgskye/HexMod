@@ -1,12 +1,22 @@
 package at.petrak.hexcasting.client.render;
 
+import at.petrak.hexcasting.api.block.HexBlockEntity;
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.common.blocks.akashic.BlockAkashicBookshelf;
+import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
+import at.petrak.hexcasting.common.blocks.circles.BlockEntitySlate;
+import at.petrak.hexcasting.common.blocks.circles.BlockSlate;
+import com.mojang.blaze3d.platform.NativeImage;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.math.Axis;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -18,19 +28,6 @@ import net.minecraft.util.Tuple;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.Vec2;
-import com.mojang.blaze3d.platform.NativeImage;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Axis;
-
-import at.petrak.hexcasting.api.block.HexBlockEntity;
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.common.blocks.akashic.BlockAkashicBookshelf;
-import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
-import at.petrak.hexcasting.common.blocks.circles.BlockEntitySlate;
-import at.petrak.hexcasting.common.blocks.circles.BlockSlate;
-
 import org.joml.Matrix3f;
 import org.joml.Matrix4f;
 

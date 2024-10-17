@@ -3,9 +3,12 @@ package at.petrak.hexcasting.fabric.interop.emi;
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 import static at.petrak.hexcasting.client.render.RenderLib.renderEntity;
 
+import at.petrak.hexcasting.client.ClientTickCounter;
+import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
+import com.mojang.blaze3d.systems.RenderSystem;
+import dev.emi.emi.api.stack.EmiStack;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
@@ -13,12 +16,6 @@ import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import com.mojang.blaze3d.systems.RenderSystem;
-
-import at.petrak.hexcasting.client.ClientTickCounter;
-import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
-
-import dev.emi.emi.api.stack.EmiStack;
 
 public class BrainsweepeeEmiStack extends EmiStack {
 	public final BrainsweepeeIngredient ingredient;

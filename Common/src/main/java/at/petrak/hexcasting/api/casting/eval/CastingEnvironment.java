@@ -3,6 +3,16 @@ package at.petrak.hexcasting.api.casting.eval;
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 import static at.petrak.hexcasting.api.casting.eval.CastingEnvironmentComponent.*;
 
+import at.petrak.hexcasting.api.casting.ParticleSpray;
+import at.petrak.hexcasting.api.casting.PatternShapeMatch;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
+import at.petrak.hexcasting.api.casting.mishaps.Mishap;
+import at.petrak.hexcasting.api.casting.mishaps.MishapBadLocation;
+import at.petrak.hexcasting.api.casting.mishaps.MishapDisallowedSpell;
+import at.petrak.hexcasting.api.casting.mishaps.MishapEntityTooFarAway;
+import at.petrak.hexcasting.api.mod.HexConfig;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.api.utils.HexUtils;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,7 +20,6 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -23,18 +32,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.casting.ParticleSpray;
-import at.petrak.hexcasting.api.casting.PatternShapeMatch;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
-import at.petrak.hexcasting.api.casting.mishaps.Mishap;
-import at.petrak.hexcasting.api.casting.mishaps.MishapBadLocation;
-import at.petrak.hexcasting.api.casting.mishaps.MishapDisallowedSpell;
-import at.petrak.hexcasting.api.casting.mishaps.MishapEntityTooFarAway;
-import at.petrak.hexcasting.api.mod.HexConfig;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.api.utils.HexUtils;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,25 +1,5 @@
 package at.petrak.hexcasting.forge;
 
-import java.io.IOException;
-import java.util.function.Function;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.color.block.BlockColors;
-import net.minecraft.client.color.item.ItemColors;
-import net.minecraft.client.model.PlayerModel;
-import net.minecraft.client.particle.ParticleProvider;
-import net.minecraft.client.particle.SpriteSet;
-import net.minecraft.client.player.AbstractClientPlayer;
-import net.minecraft.client.renderer.entity.LivingEntityRenderer;
-import net.minecraft.core.particles.ParticleOptions;
-import net.minecraft.core.particles.ParticleType;
-
-import net.minecraftforge.client.event.*;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-
 import at.petrak.hexcasting.client.ClientTickCounter;
 import at.petrak.hexcasting.client.RegisterClientStuff;
 import at.petrak.hexcasting.client.ShiftScrollListener;
@@ -32,6 +12,23 @@ import at.petrak.hexcasting.common.casting.PatternRegistryManifest;
 import at.petrak.hexcasting.common.lib.HexParticles;
 import at.petrak.hexcasting.common.misc.PatternTooltip;
 import at.petrak.hexcasting.interop.HexInterop;
+import java.io.IOException;
+import java.util.function.Function;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.color.block.BlockColors;
+import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.client.model.PlayerModel;
+import net.minecraft.client.particle.ParticleProvider;
+import net.minecraft.client.particle.SpriteSet;
+import net.minecraft.client.player.AbstractClientPlayer;
+import net.minecraft.client.renderer.entity.LivingEntityRenderer;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleType;
+import net.minecraftforge.client.event.*;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 // This is Java because I can't kotlin-fu some of the consumers
 public class ForgeHexClientInitializer {

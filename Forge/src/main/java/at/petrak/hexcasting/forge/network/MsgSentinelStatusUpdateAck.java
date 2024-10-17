@@ -2,20 +2,17 @@ package at.petrak.hexcasting.forge.network;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.player.Sentinel;
+import at.petrak.hexcasting.common.msgs.IMessage;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import io.netty.buffer.ByteBuf;
 import javax.annotation.Nullable;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.player.Sentinel;
-import at.petrak.hexcasting.common.msgs.IMessage;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
-import io.netty.buffer.ByteBuf;
 
 /** Sent server->client to synchronize the status of the sentinel. */
 public record MsgSentinelStatusUpdateAck(@Nullable Sentinel update) implements IMessage {

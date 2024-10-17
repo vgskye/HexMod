@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.api.casting.arithmetic.operator;
 
-import java.util.List;
-import java.util.function.BinaryOperator;
-
 import at.petrak.hexcasting.api.casting.arithmetic.predicates.IotaMultiPredicate;
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
 import at.petrak.hexcasting.api.casting.iota.Iota;
-
+import java.util.List;
+import java.util.function.BinaryOperator;
 import org.jetbrains.annotations.NotNull;
 
 /** A helper class for defining {@link Operator}s of two iotas. */

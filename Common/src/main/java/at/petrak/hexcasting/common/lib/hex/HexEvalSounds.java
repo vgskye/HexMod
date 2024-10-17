@@ -2,14 +2,12 @@ package at.petrak.hexcasting.common.lib.hex;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.eval.sideeffects.EvalSound;
+import at.petrak.hexcasting.common.lib.HexSounds;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 import net.minecraft.resources.ResourceLocation;
-
-import at.petrak.hexcasting.api.casting.eval.sideeffects.EvalSound;
-import at.petrak.hexcasting.common.lib.HexSounds;
 
 // TODO: we REALLY need a cleanup of how sounds work. again.
 public class HexEvalSounds {

@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.fabric.cc;
 
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.player.Player;
-
 import at.petrak.hexcasting.api.pigment.FrozenPigment;
-
 import dev.onyxstudios.cca.api.v3.component.Component;
 import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.entity.player.Player;
 import org.jetbrains.annotations.Nullable;
 
 /** Holds the pigment item favored by the player */

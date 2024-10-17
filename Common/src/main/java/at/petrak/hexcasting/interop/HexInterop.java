@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.interop;
 
-import java.util.List;
-
 import at.petrak.hexcasting.interop.pehkui.PehkuiInterop;
 import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import at.petrak.hexcasting.xplat.Platform;
-
+import java.util.List;
 import vazkii.patchouli.api.PatchouliAPI;
 
 public class HexInterop {

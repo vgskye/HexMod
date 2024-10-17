@@ -1,18 +1,16 @@
 package at.petrak.hexcasting.datagen.tag;
 
+import at.petrak.hexcasting.api.mod.HexTags;
+import at.petrak.hexcasting.common.lib.HexBlocks;
+import at.petrak.hexcasting.xplat.IXplatTags;
+import at.petrak.paucal.api.datagen.PaucalBlockTagProvider;
 import java.util.concurrent.CompletableFuture;
-
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-
-import at.petrak.hexcasting.api.mod.HexTags;
-import at.petrak.hexcasting.common.lib.HexBlocks;
-import at.petrak.hexcasting.xplat.IXplatTags;
-import at.petrak.paucal.api.datagen.PaucalBlockTagProvider;
 
 public class HexBlockTagProvider extends PaucalBlockTagProvider {
 	public final IXplatTags xtags;

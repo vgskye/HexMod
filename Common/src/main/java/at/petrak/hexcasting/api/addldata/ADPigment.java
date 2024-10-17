@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.api.addldata;
 
+import at.petrak.hexcasting.api.pigment.ColorProvider;
 import java.util.UUID;
-
 import net.minecraft.util.FastColor;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.pigment.ColorProvider;
 
 public interface ADPigment {
 	ColorProvider provideColor(UUID owner);

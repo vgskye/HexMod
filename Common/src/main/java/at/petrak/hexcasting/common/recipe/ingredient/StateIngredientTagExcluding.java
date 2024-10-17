@@ -1,17 +1,15 @@
 package at.petrak.hexcasting.common.recipe.ingredient;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import java.util.Collection;
 import java.util.List;
 import java.util.Random;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.NotNull;
 
 public class StateIngredientTagExcluding extends StateIngredientTag {

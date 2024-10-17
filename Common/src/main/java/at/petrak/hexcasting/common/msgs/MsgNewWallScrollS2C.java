@@ -2,6 +2,8 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.common.entities.EntityWallScroll;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -9,9 +11,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.common.entities.EntityWallScroll;
 
 // https://github.com/VazkiiMods/Botania/blob/1.18.x/Xplat/src/main/java/vazkii/botania/network/clientbound/PacketSpawnDoppleganger.java
 public record MsgNewWallScrollS2C(

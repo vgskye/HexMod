@@ -2,15 +2,13 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.common.loot.AddPerWorldPatternToScrollFunc;
+import at.petrak.hexcasting.common.loot.AmethystReducerFunc;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
-
-import at.petrak.hexcasting.common.loot.AddPerWorldPatternToScrollFunc;
-import at.petrak.hexcasting.common.loot.AmethystReducerFunc;
 
 public class HexLootFunctions {
 	public static void registerSerializers(BiConsumer<LootItemFunctionType, ResourceLocation> r) {

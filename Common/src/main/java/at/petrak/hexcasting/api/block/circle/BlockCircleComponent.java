@@ -1,5 +1,6 @@
 package at.petrak.hexcasting.api.block.circle;
 
+import at.petrak.hexcasting.api.casting.circles.ICircleComponent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -10,8 +11,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-
-import at.petrak.hexcasting.api.casting.circles.ICircleComponent;
 
 // Convenience impl of ICircleComponent
 public abstract class BlockCircleComponent extends Block implements ICircleComponent {

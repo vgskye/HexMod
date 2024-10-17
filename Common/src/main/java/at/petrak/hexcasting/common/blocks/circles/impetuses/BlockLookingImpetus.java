@@ -1,15 +1,13 @@
 package at.petrak.hexcasting.common.blocks.circles.impetuses;
 
+import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
+import at.petrak.hexcasting.common.lib.HexBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
-import at.petrak.hexcasting.common.lib.HexBlockEntities;
-
 import org.jetbrains.annotations.Nullable;
 
 public class BlockLookingImpetus extends BlockAbstractImpetus {

@@ -1,12 +1,11 @@
 package at.petrak.hexcasting.fabric.cc;
 
+import dev.onyxstudios.cca.api.v3.component.Component;
+import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
-
-import dev.onyxstudios.cca.api.v3.component.Component;
-import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
 
 public class CCBrainswept implements Component, AutoSyncedComponent {
 	public static final String TAG_BRAINSWEPT = "brainswept";

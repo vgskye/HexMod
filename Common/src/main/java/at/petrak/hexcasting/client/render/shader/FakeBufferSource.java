@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.client.render.shader;
 
+import at.petrak.hexcasting.mixin.accessor.client.AccessorCompositeRenderType;
+import at.petrak.hexcasting.mixin.accessor.client.AccessorEmptyTextureStateShard;
+import at.petrak.hexcasting.mixin.accessor.client.AccessorRenderStateShard;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import java.util.Optional;
 import java.util.function.Function;
-
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderStateShard;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-
-import at.petrak.hexcasting.mixin.accessor.client.AccessorCompositeRenderType;
-import at.petrak.hexcasting.mixin.accessor.client.AccessorEmptyTextureStateShard;
-import at.petrak.hexcasting.mixin.accessor.client.AccessorRenderStateShard;
-
 import org.jetbrains.annotations.NotNull;
 
 public record FakeBufferSource(

@@ -1,8 +1,9 @@
 package at.petrak.hexcasting.common.recipe.ingredient;
 
+import com.google.common.collect.ImmutableMap;
+import com.google.gson.JsonObject;
 import java.util.*;
 import javax.annotation.Nullable;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -11,9 +12,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
-
-import com.google.common.collect.ImmutableMap;
-import com.google.gson.JsonObject;
 
 public class StateIngredientBlockState implements StateIngredient {
 	private final BlockState state;

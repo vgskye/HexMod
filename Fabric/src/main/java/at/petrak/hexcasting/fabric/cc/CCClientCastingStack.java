@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.fabric.cc;
 
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.player.Player;
-
 import at.petrak.hexcasting.api.client.ClientCastingStack;
-
 import dev.onyxstudios.cca.api.v3.component.Component;
 import dev.onyxstudios.cca.api.v3.component.tick.ClientTickingComponent;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.entity.player.Player;
 
 public class CCClientCastingStack implements Component, ClientTickingComponent {
 

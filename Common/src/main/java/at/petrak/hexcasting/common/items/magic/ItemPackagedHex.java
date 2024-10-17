@@ -2,9 +2,19 @@ package at.petrak.hexcasting.common.items.magic;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.ParticleSpray;
+import at.petrak.hexcasting.api.casting.eval.env.PackagedItemCastEnv;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingVM;
+import at.petrak.hexcasting.api.casting.iota.Iota;
+import at.petrak.hexcasting.api.casting.iota.IotaType;
+import at.petrak.hexcasting.api.casting.iota.PatternIota;
+import at.petrak.hexcasting.api.item.HexHolderItem;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.common.msgs.MsgNewSpiralPatternsS2C;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import java.util.ArrayList;
 import java.util.List;
-
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
@@ -21,19 +31,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.casting.ParticleSpray;
-import at.petrak.hexcasting.api.casting.eval.env.PackagedItemCastEnv;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingVM;
-import at.petrak.hexcasting.api.casting.iota.Iota;
-import at.petrak.hexcasting.api.casting.iota.IotaType;
-import at.petrak.hexcasting.api.casting.iota.PatternIota;
-import at.petrak.hexcasting.api.item.HexHolderItem;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.common.msgs.MsgNewSpiralPatternsS2C;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import org.jetbrains.annotations.Nullable;
 
 /** Item that holds a list of patterns in it ready to be cast */

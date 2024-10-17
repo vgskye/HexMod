@@ -1,8 +1,10 @@
 package at.petrak.hexcasting.common.blocks.circles;
 
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
 import java.util.EnumSet;
 import java.util.List;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -15,10 +17,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
 
 // As it turns out, not actually an impetus
 public class BlockEmptyImpetus extends BlockCircleComponent {

@@ -1,8 +1,15 @@
 package at.petrak.hexcasting.api.casting.circles;
 
+import at.petrak.hexcasting.api.block.HexBlockEntity;
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.misc.MediaConstants;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.api.utils.MediaHelper;
+import at.petrak.hexcasting.common.items.magic.ItemCreativeUnlocker;
+import at.petrak.hexcasting.common.lib.HexItems;
+import com.mojang.datafixers.util.Pair;
 import java.text.DecimalFormat;
 import java.util.List;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -23,16 +30,6 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.phys.AABB;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.block.HexBlockEntity;
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.misc.MediaConstants;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.api.utils.MediaHelper;
-import at.petrak.hexcasting.common.items.magic.ItemCreativeUnlocker;
-import at.petrak.hexcasting.common.lib.HexItems;
-
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.Nullable;
 

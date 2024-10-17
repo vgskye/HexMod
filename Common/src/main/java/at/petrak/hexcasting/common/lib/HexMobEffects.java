@@ -2,16 +2,14 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.common.misc.HexMobEffect;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-
-import at.petrak.hexcasting.common.misc.HexMobEffect;
 
 public class HexMobEffects {
 	public static void register(BiConsumer<MobEffect, ResourceLocation> r) {

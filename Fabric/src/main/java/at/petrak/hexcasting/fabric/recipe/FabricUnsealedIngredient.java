@@ -2,24 +2,21 @@ package at.petrak.hexcasting.fabric.recipe;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.item.IotaHolderItem;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import io.github.tropheusj.serialization_hooks.ingredient.BaseCustomIngredient;
+import io.github.tropheusj.serialization_hooks.ingredient.IngredientDeserializer;
 import java.util.Objects;
 import java.util.stream.Stream;
 import javax.annotation.Nullable;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.ShapedRecipe;
-
-import at.petrak.hexcasting.api.item.IotaHolderItem;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import io.github.tropheusj.serialization_hooks.ingredient.BaseCustomIngredient;
-import io.github.tropheusj.serialization_hooks.ingredient.IngredientDeserializer;
 import org.jetbrains.annotations.NotNull;
 
 public class FabricUnsealedIngredient extends BaseCustomIngredient {

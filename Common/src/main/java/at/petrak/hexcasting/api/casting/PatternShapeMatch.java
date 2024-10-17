@@ -1,8 +1,7 @@
 package at.petrak.hexcasting.api.casting;
 
-import net.minecraft.resources.ResourceKey;
-
 import at.petrak.hexcasting.api.casting.castables.SpecialHandler;
+import net.minecraft.resources.ResourceKey;
 
 /** Possible things we find when trying to match a pattern's shape. */
 public abstract sealed class PatternShapeMatch {

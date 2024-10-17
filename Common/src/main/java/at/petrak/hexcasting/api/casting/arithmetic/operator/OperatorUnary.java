@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.api.casting.arithmetic.operator;
 
-import java.util.List;
-import java.util.function.UnaryOperator;
-
 import at.petrak.hexcasting.api.casting.arithmetic.predicates.IotaMultiPredicate;
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
 import at.petrak.hexcasting.api.casting.iota.Iota;
-
+import java.util.List;
+import java.util.function.UnaryOperator;
 import org.jetbrains.annotations.NotNull;
 
 /** A helper class for defining {@link Operator}s of one iota. */

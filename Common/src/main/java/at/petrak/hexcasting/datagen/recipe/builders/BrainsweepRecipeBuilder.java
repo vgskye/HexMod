@@ -1,7 +1,11 @@
 package at.petrak.hexcasting.datagen.recipe.builders;
 
+import at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry;
+import at.petrak.hexcasting.common.recipe.ingredient.StateIngredient;
+import at.petrak.hexcasting.common.recipe.ingredient.StateIngredientHelper;
+import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
+import com.google.gson.JsonObject;
 import java.util.function.Consumer;
-
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;
@@ -13,13 +17,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry;
-import at.petrak.hexcasting.common.recipe.ingredient.StateIngredient;
-import at.petrak.hexcasting.common.recipe.ingredient.StateIngredientHelper;
-import at.petrak.hexcasting.common.recipe.ingredient.brainsweep.BrainsweepeeIngredient;
-
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.Nullable;
 
 public class BrainsweepRecipeBuilder implements RecipeBuilder {

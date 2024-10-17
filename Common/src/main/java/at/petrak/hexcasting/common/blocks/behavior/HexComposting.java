@@ -1,11 +1,10 @@
 package at.petrak.hexcasting.common.blocks.behavior;
 
+import at.petrak.hexcasting.common.lib.HexBlocks;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.ComposterBlock;
-
-import at.petrak.hexcasting.common.lib.HexBlocks;
 
 public final class HexComposting {
 

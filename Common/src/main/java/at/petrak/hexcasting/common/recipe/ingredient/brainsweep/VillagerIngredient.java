@@ -1,9 +1,9 @@
 package at.petrak.hexcasting.common.recipe.ingredient.brainsweep;
 
+import com.google.gson.JsonObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
@@ -19,8 +19,6 @@ import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerType;
 import net.minecraft.world.level.Level;
-
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.Nullable;
 
 /** Special case for villagers so we can have biome/profession/level reqs */

@@ -1,5 +1,7 @@
 package at.petrak.hexcasting.fabric.mixin.client;
 
+import at.petrak.hexcasting.fabric.xplat.FabricClientXplatImpl;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Camera;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.LevelRenderer;
@@ -7,10 +9,6 @@ import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraft.world.phys.Vec3;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-import at.petrak.hexcasting.fabric.xplat.FabricClientXplatImpl;
-
 import org.joml.Matrix4f;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

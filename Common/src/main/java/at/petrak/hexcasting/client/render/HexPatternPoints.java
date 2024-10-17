@@ -1,7 +1,6 @@
 package at.petrak.hexcasting.client.render;
 
 import java.util.List;
-
 import net.minecraft.world.phys.Vec2;
 
 public class HexPatternPoints {

@@ -1,16 +1,14 @@
 package at.petrak.hexcasting.api.advancements;
 
-import java.util.Objects;
-import java.util.function.Function;
-import javax.annotation.Nullable;
-
-import net.minecraft.advancements.critereon.MinMaxBounds;
-import net.minecraft.util.GsonHelper;
+import com.google.gson.JsonElement;
 import com.mojang.brigadier.StringReader;
 import com.mojang.brigadier.exceptions.BuiltInExceptionProvider;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-
-import com.google.gson.JsonElement;
+import java.util.Objects;
+import java.util.function.Function;
+import javax.annotation.Nullable;
+import net.minecraft.advancements.critereon.MinMaxBounds;
+import net.minecraft.util.GsonHelper;
 
 public class MinMaxLongs extends MinMaxBounds<Long> {
 	public static final MinMaxLongs ANY = new MinMaxLongs(null, null);

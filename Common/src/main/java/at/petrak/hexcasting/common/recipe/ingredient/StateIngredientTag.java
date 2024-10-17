@@ -1,12 +1,13 @@
 package at.petrak.hexcasting.common.recipe.ingredient;
 
+import com.google.common.collect.ImmutableSet;
+import com.google.gson.JsonObject;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 import javax.annotation.Nonnull;
-
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -16,9 +17,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-
-import com.google.common.collect.ImmutableSet;
-import com.google.gson.JsonObject;
 
 public class StateIngredientTag extends StateIngredientBlocks {
 	private final TagKey<Block> tag;

@@ -1,5 +1,6 @@
 package at.petrak.hexcasting.common.blocks.decoration;
 
+import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -22,8 +23,6 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-
-import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
 
 public class BlockSconce extends AmethystBlock implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = BlockStateProperties.FACING;

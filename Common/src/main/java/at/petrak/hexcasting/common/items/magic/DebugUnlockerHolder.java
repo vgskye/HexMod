@@ -1,8 +1,7 @@
 package at.petrak.hexcasting.common.items.magic;
 
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
+import net.minecraft.world.item.ItemStack;
 
 public record DebugUnlockerHolder(ItemStack creativeUnlocker) implements ADMediaHolder {
 	@Override

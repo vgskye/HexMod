@@ -1,13 +1,11 @@
 package at.petrak.hexcasting.forge.cap;
 
+import at.petrak.hexcasting.api.addldata.*;
+import at.petrak.hexcasting.api.client.ClientCastingStack;
 import java.util.function.Supplier;
-
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.CapabilityToken;
-
-import at.petrak.hexcasting.api.addldata.*;
-import at.petrak.hexcasting.api.client.ClientCastingStack;
 
 public final class HexCapabilities {
 

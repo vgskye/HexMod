@@ -2,19 +2,17 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.client.particles.ConjureParticle;
+import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
-
 import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.resources.ResourceLocation;
-
-import at.petrak.hexcasting.client.particles.ConjureParticle;
-import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
 
 public class HexParticles {
 	public static void registerParticles(BiConsumer<ParticleType<?>, ResourceLocation> r) {

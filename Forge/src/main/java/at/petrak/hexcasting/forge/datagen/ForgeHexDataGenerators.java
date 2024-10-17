@@ -1,30 +1,5 @@
 package at.petrak.hexcasting.forge.datagen;
 
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Stream;
-
-import net.minecraft.core.RegistrySetBuilder;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.advancements.AdvancementProvider;
-import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-
-import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.ToolActions;
-import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.common.lib.HexDamageTypes;
 import at.petrak.hexcasting.datagen.HexAdvancements;
@@ -40,8 +15,29 @@ import at.petrak.hexcasting.forge.datagen.xplat.HexBlockStatesAndModels;
 import at.petrak.hexcasting.forge.datagen.xplat.HexItemModels;
 import at.petrak.hexcasting.forge.recipe.ForgeModConditionalIngredient;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import com.google.gson.JsonObject;
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Stream;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.advancements.AdvancementProvider;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraftforge.common.Tags;
+import net.minecraftforge.common.ToolActions;
+import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ForgeHexDataGenerators {
 	@SubscribeEvent

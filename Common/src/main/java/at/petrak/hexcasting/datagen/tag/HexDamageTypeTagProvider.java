@@ -1,7 +1,7 @@
 package at.petrak.hexcasting.datagen.tag;
 
+import at.petrak.hexcasting.common.lib.HexDamageTypes;
 import java.util.concurrent.CompletableFuture;
-
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.DamageTypeTagsProvider;
@@ -9,9 +9,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.damagesource.DamageType;
-
-import at.petrak.hexcasting.common.lib.HexDamageTypes;
-
 import org.jetbrains.annotations.NotNull;
 
 public class HexDamageTypeTagProvider extends DamageTypeTagsProvider {

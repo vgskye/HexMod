@@ -2,19 +2,6 @@ package at.petrak.hexcasting.common.lib.hex;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.BiConsumer;
-
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LayeredCauldronBlock;
-import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.castables.Action;
 import at.petrak.hexcasting.api.casting.castables.OperationAction;
@@ -45,6 +32,17 @@ import at.petrak.hexcasting.common.casting.actions.stack.*;
 import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.hexcasting.interop.pehkui.*;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LayeredCauldronBlock;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.phys.Vec3;
 
 @SuppressWarnings("unused")
 public class HexActions {

@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.interop.pehkui;
 
-import net.minecraft.world.entity.Entity;
-
 import at.petrak.hexcasting.interop.HexInterop;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import net.minecraft.world.entity.Entity;
 
 public class PehkuiInterop {
 	public static void init() {

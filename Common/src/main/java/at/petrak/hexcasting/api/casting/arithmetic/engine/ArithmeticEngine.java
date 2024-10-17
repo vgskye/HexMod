@@ -1,7 +1,5 @@
 package at.petrak.hexcasting.api.casting.arithmetic.engine;
 
-import java.util.*;
-
 import at.petrak.hexcasting.api.casting.arithmetic.Arithmetic;
 import at.petrak.hexcasting.api.casting.arithmetic.operator.Operator;
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
@@ -12,6 +10,7 @@ import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
 import at.petrak.hexcasting.api.casting.mishaps.Mishap;
 import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughArgs;
+import java.util.*;
 
 /**
  * This is the class responsible for managing the various Arithmetics that are in use, deciding

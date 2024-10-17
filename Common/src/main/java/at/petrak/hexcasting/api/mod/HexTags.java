@@ -2,15 +2,14 @@ package at.petrak.hexcasting.api.mod;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-
-import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
 
 public class HexTags {
 	public static final class Items {

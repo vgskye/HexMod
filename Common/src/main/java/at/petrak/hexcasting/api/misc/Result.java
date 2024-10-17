@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.api.misc;
 
+import com.mojang.datafixers.util.Unit;
 import java.util.function.Consumer;
 import java.util.function.Function;
-
-import com.mojang.datafixers.util.Unit;
 
 /** I'm sick and tired of not having a result class god dammit */
 public abstract sealed class Result<T, E> {

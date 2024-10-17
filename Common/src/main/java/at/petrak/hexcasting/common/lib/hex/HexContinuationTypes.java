@@ -2,20 +2,18 @@ package at.petrak.hexcasting.common.lib.hex;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.BiConsumer;
-import javax.annotation.ParametersAreNonnullByDefault;
-
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.casting.eval.vm.ContinuationFrame;
 import at.petrak.hexcasting.api.casting.eval.vm.FrameEvaluate;
 import at.petrak.hexcasting.api.casting.eval.vm.FrameFinishEval;
 import at.petrak.hexcasting.api.casting.eval.vm.FrameForEach;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import javax.annotation.ParametersAreNonnullByDefault;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
 
 /**
  * Stores the registry for continuation frame types, some utility methods, and all the types

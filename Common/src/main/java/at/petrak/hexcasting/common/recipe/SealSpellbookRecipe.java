@@ -1,5 +1,10 @@
 package at.petrak.hexcasting.common.recipe;
 
+import at.petrak.hexcasting.api.item.IotaHolderItem;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.common.items.storage.ItemSpellbook;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceLocation;
@@ -7,13 +12,6 @@ import net.minecraft.world.inventory.CraftingContainer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
-
-import at.petrak.hexcasting.api.item.IotaHolderItem;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.common.items.storage.ItemSpellbook;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import org.jetbrains.annotations.NotNull;
 
 public class SealSpellbookRecipe extends ShapelessRecipe {

@@ -1,16 +1,14 @@
 package at.petrak.hexcasting.forge.lib;
 
-import com.mojang.serialization.Codec;
-
-import net.minecraftforge.common.loot.IGlobalLootModifier;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.forge.loot.ForgeHexAmethystLootMod;
 import at.petrak.hexcasting.forge.loot.ForgeHexLoreLootMod;
 import at.petrak.hexcasting.forge.loot.ForgeHexScrollLootMod;
+import com.mojang.serialization.Codec;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ForgeHexLootMods {
 	public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> REGISTRY =

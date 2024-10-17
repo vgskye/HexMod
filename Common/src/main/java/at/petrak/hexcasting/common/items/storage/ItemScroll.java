@@ -2,8 +2,16 @@ package at.petrak.hexcasting.common.items.storage;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.iota.Iota;
+import at.petrak.hexcasting.api.casting.iota.PatternIota;
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.api.item.IotaHolderItem;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.client.gui.PatternTooltipComponent;
+import at.petrak.hexcasting.common.entities.EntityWallScroll;
+import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
+import at.petrak.hexcasting.common.misc.PatternTooltip;
 import java.util.Optional;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -17,17 +25,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.gameevent.GameEvent;
-
-import at.petrak.hexcasting.api.casting.iota.Iota;
-import at.petrak.hexcasting.api.casting.iota.PatternIota;
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.api.item.IotaHolderItem;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.client.gui.PatternTooltipComponent;
-import at.petrak.hexcasting.common.entities.EntityWallScroll;
-import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
-import at.petrak.hexcasting.common.misc.PatternTooltip;
-
 import org.jetbrains.annotations.Nullable;
 
 /**

@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.forge.cap.adimpl;
 
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
 import at.petrak.hexcasting.api.item.MediaHolderItem;
+import net.minecraft.world.item.ItemStack;
 
 /** Things that read/write media amounts from an itemstack */
 public record CapItemMediaHolder(MediaHolderItem holder, ItemStack stack) implements ADMediaHolder {

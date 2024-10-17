@@ -3,12 +3,6 @@ package at.petrak.hexcasting.common.casting.arithmetic;
 import static at.petrak.hexcasting.api.casting.arithmetic.operator.Operator.downcast;
 import static at.petrak.hexcasting.common.lib.hex.HexIotaTypes.*;
 
-import java.util.List;
-import java.util.function.BiFunction;
-import java.util.function.Function;
-
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.casting.arithmetic.Arithmetic;
 import at.petrak.hexcasting.api.casting.arithmetic.engine.InvalidOperatorException;
 import at.petrak.hexcasting.api.casting.arithmetic.operator.*;
@@ -20,6 +14,10 @@ import at.petrak.hexcasting.api.casting.math.HexPattern;
 import at.petrak.hexcasting.common.casting.arithmetic.operator.vec.OperatorPack;
 import at.petrak.hexcasting.common.casting.arithmetic.operator.vec.OperatorUnpack;
 import at.petrak.hexcasting.common.casting.arithmetic.operator.vec.OperatorVec3Delegating;
+import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import net.minecraft.world.phys.Vec3;
 
 public enum Vec3Arithmetic implements Arithmetic {
 	INSTANCE;

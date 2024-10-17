@@ -1,14 +1,12 @@
 package at.petrak.hexcasting.common.blocks.entity;
 
-import java.util.function.BiFunction;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.level.block.state.BlockState;
-
 import at.petrak.hexcasting.api.block.HexBlockEntity;
 import at.petrak.hexcasting.common.blocks.BlockQuenchedAllay;
 import at.petrak.hexcasting.common.lib.HexBlockEntities;
+import java.util.function.BiFunction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.level.block.state.BlockState;
 
 /** No-op BE just to have a BER */
 public class BlockEntityQuenchedAllay extends HexBlockEntity {

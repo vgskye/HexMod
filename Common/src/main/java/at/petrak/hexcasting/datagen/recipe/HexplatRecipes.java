@@ -1,26 +1,5 @@
 package at.petrak.hexcasting.datagen.recipe;
 
-import java.util.List;
-import java.util.Map;
-import java.util.function.Consumer;
-import java.util.function.Function;
-
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.npc.VillagerProfession;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.DyeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
-import net.minecraft.world.level.block.Blocks;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.misc.MediaConstants;
 import at.petrak.hexcasting.api.mod.HexTags;
@@ -41,6 +20,25 @@ import at.petrak.hexcasting.datagen.recipe.builders.CompatIngredientValue;
 import at.petrak.hexcasting.datagen.recipe.builders.CreateCrushingRecipeBuilder;
 import at.petrak.hexcasting.datagen.recipe.builders.FarmersDelightCuttingRecipeBuilder;
 import at.petrak.paucal.api.datagen.PaucalRecipeProvider;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.DyeItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
+import net.minecraft.world.level.block.Blocks;
 
 // TODO: need to do a big refactor of this class cause it's giant and unwieldy, probably as part of
 // #360

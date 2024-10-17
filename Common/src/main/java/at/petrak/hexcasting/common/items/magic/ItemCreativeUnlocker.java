@@ -2,11 +2,18 @@ package at.petrak.hexcasting.common.items.magic;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
+import at.petrak.hexcasting.api.item.MediaHolderItem;
+import at.petrak.hexcasting.api.misc.DiscoveryHandlers;
+import at.petrak.hexcasting.api.misc.MediaConstants;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.common.items.ItemLoreFragment;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.common.lib.HexSounds;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.locale.Language;
@@ -26,16 +33,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-
-import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
-import at.petrak.hexcasting.api.item.MediaHolderItem;
-import at.petrak.hexcasting.api.misc.DiscoveryHandlers;
-import at.petrak.hexcasting.api.misc.MediaConstants;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.common.items.ItemLoreFragment;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.common.lib.HexSounds;
-
 import org.jetbrains.annotations.Nullable;
 
 public class ItemCreativeUnlocker extends Item implements MediaHolderItem {

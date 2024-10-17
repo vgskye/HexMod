@@ -2,19 +2,17 @@ package at.petrak.hexcasting.common.lib.hex;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.BiConsumer;
-import java.util.stream.Collectors;
-
-import net.minecraft.core.Holder;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.casting.arithmetic.Arithmetic;
 import at.petrak.hexcasting.api.casting.arithmetic.engine.ArithmeticEngine;
 import at.petrak.hexcasting.common.casting.arithmetic.*;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
+import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
 
 public class HexArithmetics {
 	private static ArithmeticEngine ENGINE;

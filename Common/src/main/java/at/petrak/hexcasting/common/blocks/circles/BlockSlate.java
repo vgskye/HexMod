@@ -1,8 +1,15 @@
 package at.petrak.hexcasting.common.blocks.circles;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingVM;
+import at.petrak.hexcasting.api.casting.iota.PatternIota;
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.common.lib.HexItems;
 import java.util.EnumSet;
 import javax.annotation.Nonnull;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -26,16 +33,6 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingVM;
-import at.petrak.hexcasting.api.casting.iota.PatternIota;
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.common.lib.HexItems;
-
 import org.jetbrains.annotations.Nullable;
 
 // When on the floor or ceiling FACING is the direction the *bottom* of the pattern points

@@ -1,5 +1,10 @@
 package at.petrak.hexcasting.common.items;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.common.lib.HexSounds;
+import at.petrak.hexcasting.common.msgs.MsgClearSpiralPatternsS2C;
+import at.petrak.hexcasting.common.msgs.MsgOpenSpellGuiS2C;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -9,12 +14,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.common.lib.HexSounds;
-import at.petrak.hexcasting.common.msgs.MsgClearSpiralPatternsS2C;
-import at.petrak.hexcasting.common.msgs.MsgOpenSpellGuiS2C;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
 
 public class ItemStaff extends Item {
 	// 0 = normal. 1 = old. 2 = cherry preview

@@ -1,5 +1,10 @@
 package at.petrak.hexcasting.fabric.interop.trinkets;
 
+import at.petrak.hexcasting.common.lib.HexItems;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
+import dev.emi.trinkets.api.SlotReference;
+import dev.emi.trinkets.api.client.TrinketRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.PlayerModel;
@@ -9,13 +14,6 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
-
-import at.petrak.hexcasting.common.lib.HexItems;
-
-import dev.emi.trinkets.api.SlotReference;
-import dev.emi.trinkets.api.client.TrinketRenderer;
 
 /**
  * @author WireSegal Created at 9:50 AM on 7/25/22.

@@ -1,15 +1,12 @@
 package at.petrak.hexcasting.common.blocks.akashic;
 
+import at.petrak.hexcasting.api.misc.TriPredicate;
 import java.util.ArrayDeque;
 import java.util.HashSet;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.api.misc.TriPredicate;
-
 import org.jetbrains.annotations.Nullable;
 
 public interface AkashicFloodfiller {

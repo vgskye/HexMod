@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.fabric.mixin;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.fabric.loot.FabricHexLootModJankery;
+import at.petrak.hexcasting.mixin.accessor.AccessorLootTable;
 import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
-
 import net.minecraft.server.ReloadableServerResources;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootDataId;
 import net.minecraft.world.level.storage.loot.LootDataType;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctions;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.fabric.loot.FabricHexLootModJankery;
-import at.petrak.hexcasting.mixin.accessor.AccessorLootTable;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

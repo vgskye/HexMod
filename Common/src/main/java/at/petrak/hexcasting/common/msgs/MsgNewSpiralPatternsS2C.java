@@ -2,18 +2,15 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
+import io.netty.buffer.ByteBuf;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
-
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
-
-import io.netty.buffer.ByteBuf;
 
 public record MsgNewSpiralPatternsS2C(UUID playerUUID, List<HexPattern> patterns, int lifetime)
 		implements IMessage {

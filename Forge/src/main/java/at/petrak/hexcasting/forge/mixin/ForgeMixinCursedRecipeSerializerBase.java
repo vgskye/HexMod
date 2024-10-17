@@ -1,11 +1,8 @@
 package at.petrak.hexcasting.forge.mixin;
 
-import javax.annotation.Nullable;
-
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.common.recipe.RecipeSerializerBase;
-
+import javax.annotation.Nullable;
+import net.minecraft.resources.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 

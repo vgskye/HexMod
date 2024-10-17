@@ -2,6 +2,13 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.iota.IotaType;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.common.items.storage.ItemAbacus;
+import at.petrak.hexcasting.common.items.storage.ItemSpellbook;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.common.lib.HexSounds;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -12,15 +19,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
-
-import at.petrak.hexcasting.api.casting.iota.IotaType;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.common.items.storage.ItemAbacus;
-import at.petrak.hexcasting.common.items.storage.ItemSpellbook;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.common.lib.HexSounds;
-
-import io.netty.buffer.ByteBuf;
 
 /**
  * Sent client->server when the client shift+scrolls with a shift-scrollable item or scrolls in the

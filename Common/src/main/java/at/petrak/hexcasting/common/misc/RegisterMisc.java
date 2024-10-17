@@ -1,14 +1,13 @@
 package at.petrak.hexcasting.common.misc;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.mixin.accessor.AccessorAbstractArrow;
+import at.petrak.hexcasting.mixin.accessor.AccessorVillager;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.mixin.accessor.AccessorAbstractArrow;
-import at.petrak.hexcasting.mixin.accessor.AccessorVillager;
 
 public class RegisterMisc {
 	public static void register() {

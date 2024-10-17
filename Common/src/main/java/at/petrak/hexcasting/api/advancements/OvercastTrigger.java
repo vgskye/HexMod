@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.api.advancements;
 
+import at.petrak.hexcasting.api.mod.HexConfig;
+import com.google.gson.JsonObject;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-
-import at.petrak.hexcasting.api.mod.HexConfig;
-
-import com.google.gson.JsonObject;
 
 // https://github.com/TelepathicGrunt/Bumblezone/blob/latest-released/src/main/java/com/telepathicgrunt/the_bumblezone/advancements/CleanupStickyHoneyResidueTrigger.java
 // https://github.com/VazkiiMods/Botania/blob/b8706e2e0bba20f67f1e103559a4ce39d63d48f9/src/main/java/vazkii/botania/common/advancements/CorporeaRequestTrigger.java

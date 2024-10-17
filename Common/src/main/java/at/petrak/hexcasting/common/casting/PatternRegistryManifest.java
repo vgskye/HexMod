@@ -1,13 +1,5 @@
 package at.petrak.hexcasting.common.casting;
 
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.level.ServerLevel;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.PatternShapeMatch;
@@ -19,7 +11,12 @@ import at.petrak.hexcasting.api.mod.HexTags;
 import at.petrak.hexcasting.api.utils.HexUtils;
 import at.petrak.hexcasting.server.ScrungledPatternsSave;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
+import com.mojang.datafixers.util.Pair;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.level.ServerLevel;
 import org.apache.commons.lang3.NotImplementedException;
 import org.jetbrains.annotations.Nullable;
 

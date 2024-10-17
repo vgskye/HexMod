@@ -2,20 +2,17 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.ParticleSpray;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.client.ClientTickCounter;
+import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
+import io.netty.buffer.ByteBuf;
 import java.util.Random;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.casting.ParticleSpray;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.client.ClientTickCounter;
-import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
-
-import io.netty.buffer.ByteBuf;
 
 /** Sent server->client to spray particles everywhere. */
 public record MsgCastParticleS2C(ParticleSpray spray, FrozenPigment colorizer) implements IMessage {

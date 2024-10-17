@@ -2,16 +2,14 @@ package at.petrak.hexcasting.common.entities;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.HexAPI;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
-
-import at.petrak.hexcasting.api.HexAPI;
 
 public class HexEntities {
 	public static void registerEntities(BiConsumer<EntityType<?>, ResourceLocation> r) {

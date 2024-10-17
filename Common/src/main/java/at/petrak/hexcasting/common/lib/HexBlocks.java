@@ -2,25 +2,6 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.PushReaction;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
 import at.petrak.hexcasting.common.blocks.BlockConjured;
 import at.petrak.hexcasting.common.blocks.BlockConjuredLight;
@@ -38,7 +19,23 @@ import at.petrak.hexcasting.common.blocks.circles.impetuses.BlockLookingImpetus;
 import at.petrak.hexcasting.common.blocks.circles.impetuses.BlockRedstoneImpetus;
 import at.petrak.hexcasting.common.blocks.circles.impetuses.BlockRightClickImpetus;
 import at.petrak.hexcasting.common.blocks.decoration.*;
-
+import com.mojang.datafixers.util.Pair;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.Nullable;
 
 public class HexBlocks {

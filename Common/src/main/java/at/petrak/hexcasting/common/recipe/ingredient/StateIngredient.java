@@ -1,16 +1,14 @@
 package at.petrak.hexcasting.common.recipe.ingredient;
 
+import com.google.gson.JsonObject;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.function.Predicate;
-
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.state.BlockState;
-
-import com.google.gson.JsonObject;
 
 // https://github.com/VazkiiMods/Botania/blob/1.18.x/Common/src/main/java/vazkii/botania/api/recipe/StateIngredient.java
 // good artists copy and all

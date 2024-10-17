@@ -1,15 +1,12 @@
 package at.petrak.hexcasting.fabric.cc.adimpl;
 
-import java.util.UUID;
-
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADPigment;
 import at.petrak.hexcasting.api.item.PigmentItem;
 import at.petrak.hexcasting.api.pigment.ColorProvider;
 import at.petrak.hexcasting.fabric.cc.HexCardinalComponents;
-
 import dev.onyxstudios.cca.api.v3.item.ItemComponent;
+import java.util.UUID;
+import net.minecraft.world.item.ItemStack;
 
 /** The pigment itself */
 public abstract class CCPigment extends ItemComponent implements ADPigment {

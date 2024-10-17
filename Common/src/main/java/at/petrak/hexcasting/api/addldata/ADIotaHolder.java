@@ -1,11 +1,9 @@
 package at.petrak.hexcasting.api.addldata;
 
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.level.ServerLevel;
-
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.casting.iota.IotaType;
-
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
 import org.jetbrains.annotations.Nullable;
 
 public interface ADIotaHolder {

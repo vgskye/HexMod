@@ -1,8 +1,13 @@
 package at.petrak.hexcasting.common.blocks.circles.impetuses;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.common.lib.HexBlockEntities;
+import com.mojang.authlib.GameProfile;
+import com.mojang.datafixers.util.Pair;
 import java.util.List;
 import java.util.UUID;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -16,14 +21,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import com.mojang.authlib.GameProfile;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.common.lib.HexBlockEntities;
-
 import org.jetbrains.annotations.Nullable;
 
 public class BlockEntityRedstoneImpetus extends BlockEntityAbstractImpetus {

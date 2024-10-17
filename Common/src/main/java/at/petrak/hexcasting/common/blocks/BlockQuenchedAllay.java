@@ -1,5 +1,7 @@
 package at.petrak.hexcasting.common.blocks;
 
+import at.petrak.hexcasting.common.blocks.entity.BlockEntityQuenchedAllay;
+import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleOptions;
@@ -12,10 +14,6 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.common.blocks.entity.BlockEntityQuenchedAllay;
-import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
-
 import org.jetbrains.annotations.Nullable;
 
 public class BlockQuenchedAllay extends Block implements EntityBlock {

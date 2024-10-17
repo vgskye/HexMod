@@ -1,12 +1,11 @@
 package at.petrak.hexcasting.client.render.shader;
 
-import java.io.IOException;
-import java.util.function.Consumer;
-
-import net.minecraft.client.renderer.ShaderInstance;
-import net.minecraft.server.packs.resources.ResourceProvider;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.datafixers.util.Pair;
+import java.io.IOException;
+import java.util.function.Consumer;
+import net.minecraft.client.renderer.ShaderInstance;
+import net.minecraft.server.packs.resources.ResourceProvider;
 
 // https://github.com/VazkiiMods/Botania/blob/3a43accc2fbc439c9f2f00a698f8f8ad017503db/Common/src/main/java/vazkii/botania/client/core/helper/CoreShaders.java
 public class HexShaders {

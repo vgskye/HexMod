@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.common.misc;
 
+import at.petrak.hexcasting.api.casting.math.HexPattern;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.tooltip.TooltipComponent;
-
-import at.petrak.hexcasting.api.casting.math.HexPattern;
 
 /**
  * Used for displaying patterns on the tooltips for scrolls and slates.

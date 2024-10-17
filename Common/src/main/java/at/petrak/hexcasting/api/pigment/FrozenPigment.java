@@ -1,14 +1,12 @@
 package at.petrak.hexcasting.api.pigment;
 
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import java.util.UUID;
 import java.util.function.Supplier;
-
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
-
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
 
 /**
  * A snapshot of a pigment item and its owner.

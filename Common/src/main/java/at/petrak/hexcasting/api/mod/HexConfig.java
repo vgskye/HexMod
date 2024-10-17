@@ -1,15 +1,13 @@
 package at.petrak.hexcasting.api.mod;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.misc.MediaConstants;
 import java.util.List;
-
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.misc.MediaConstants;
 
 public class HexConfig {
 	public interface CommonConfigAccess {

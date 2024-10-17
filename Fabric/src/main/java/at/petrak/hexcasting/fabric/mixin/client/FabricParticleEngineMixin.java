@@ -1,13 +1,10 @@
 package at.petrak.hexcasting.fabric.mixin.client;
 
+import at.petrak.hexcasting.client.particles.ConjureParticle;
+import com.google.common.collect.ImmutableList;
 import java.util.List;
-
 import net.minecraft.client.particle.ParticleEngine;
 import net.minecraft.client.particle.ParticleRenderType;
-
-import at.petrak.hexcasting.client.particles.ConjureParticle;
-
-import com.google.common.collect.ImmutableList;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;

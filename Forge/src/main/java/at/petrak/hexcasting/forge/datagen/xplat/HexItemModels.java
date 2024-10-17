@@ -1,19 +1,5 @@
 package at.petrak.hexcasting.forge.datagen.xplat;
 
-import java.util.Objects;
-import java.util.function.BiFunction;
-
-import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.world.level.block.Block;
-
-import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.registries.ForgeRegistries;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.client.render.GaslightingTracker;
 import at.petrak.hexcasting.common.blocks.BlockQuenchedAllay;
@@ -28,6 +14,17 @@ import at.petrak.hexcasting.common.items.storage.ItemThoughtKnot;
 import at.petrak.hexcasting.common.lib.HexBlocks;
 import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.paucal.api.forge.datagen.PaucalItemModelProvider;
+import java.util.Objects;
+import java.util.function.BiFunction;
+import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemDisplayContext;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class HexItemModels extends PaucalItemModelProvider {
 	public HexItemModels(PackOutput output, ExistingFileHelper existingFileHelper) {

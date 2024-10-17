@@ -1,5 +1,10 @@
 package at.petrak.hexcasting.forge.xplat;
 
+import at.petrak.hexcasting.api.client.ClientCastingStack;
+import at.petrak.hexcasting.common.msgs.IMessage;
+import at.petrak.hexcasting.forge.cap.HexCapabilities;
+import at.petrak.hexcasting.forge.network.ForgePacketHandler;
+import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -13,12 +18,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.AABB;
-
-import at.petrak.hexcasting.api.client.ClientCastingStack;
-import at.petrak.hexcasting.common.msgs.IMessage;
-import at.petrak.hexcasting.forge.cap.HexCapabilities;
-import at.petrak.hexcasting.forge.network.ForgePacketHandler;
-import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
 
 public class ForgeClientXplatImpl implements IClientXplatAbstractions {
 	@Override

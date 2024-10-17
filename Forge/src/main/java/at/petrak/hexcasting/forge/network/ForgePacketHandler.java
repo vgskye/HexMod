@@ -2,19 +2,15 @@ package at.petrak.hexcasting.forge.network;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.common.msgs.*;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
-
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
-
-import at.petrak.hexcasting.common.msgs.*;
-
 import org.apache.logging.log4j.util.TriConsumer;
 
 public class ForgePacketHandler {

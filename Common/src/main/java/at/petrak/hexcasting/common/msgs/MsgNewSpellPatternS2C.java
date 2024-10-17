@@ -2,18 +2,15 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.Optional;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.casting.eval.ExecutionClientView;
 import at.petrak.hexcasting.api.casting.eval.ResolvedPatternType;
 import at.petrak.hexcasting.client.gui.GuiSpellcasting;
 import at.petrak.hexcasting.common.lib.HexSounds;
-
 import io.netty.buffer.ByteBuf;
+import java.util.Optional;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
 
 /** Sent server->client when the player finishes casting a spell. */
 public record MsgNewSpellPatternS2C(ExecutionClientView info, int index) implements IMessage {

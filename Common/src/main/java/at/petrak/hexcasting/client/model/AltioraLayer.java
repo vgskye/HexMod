@@ -2,6 +2,9 @@ package at.petrak.hexcasting.client.model;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.ElytraModel;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.EntityModelSet;
@@ -15,10 +18,6 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Items;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
 
 public class AltioraLayer<M extends EntityModel<AbstractClientPlayer>>
 		extends RenderLayer<AbstractClientPlayer, M> {

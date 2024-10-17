@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.fabric.mixin;
 
+import at.petrak.hexcasting.xplat.IForgeLikeBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.EnchantmentTableBlock;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.xplat.IForgeLikeBlock;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

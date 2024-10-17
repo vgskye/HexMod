@@ -1,7 +1,6 @@
 package at.petrak.hexcasting.api.casting.eval.sideeffects;
 
 import net.minecraft.sounds.SoundEvent;
-
 import org.jetbrains.annotations.Nullable;
 
 /**

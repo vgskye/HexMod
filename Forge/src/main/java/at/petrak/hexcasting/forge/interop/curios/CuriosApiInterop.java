@@ -1,24 +1,20 @@
 package at.petrak.hexcasting.forge.interop.curios;
 
-import java.util.UUID;
-import java.util.concurrent.atomic.AtomicReference;
-
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.item.ItemStack;
-
-import net.minecraftforge.common.capabilities.ICapabilityProvider;
-import net.minecraftforge.fml.InterModComms;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-
 import at.petrak.hexcasting.api.misc.DiscoveryHandlers;
 import at.petrak.hexcasting.common.items.HexBaubleItem;
 import at.petrak.hexcasting.common.items.magic.ItemCreativeUnlocker;
 import at.petrak.hexcasting.forge.cap.ForgeCapabilityHandler;
 import at.petrak.hexcasting.interop.HexInterop;
-
 import com.google.common.collect.Multimap;
+import java.util.UUID;
+import java.util.concurrent.atomic.AtomicReference;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.common.capabilities.ICapabilityProvider;
+import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import top.theillusivec4.curios.api.CuriosCapability;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.SlotTypeMessage;

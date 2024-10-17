@@ -2,15 +2,13 @@ package at.petrak.hexcasting.forge.network;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.player.AltioraAbility;
 import at.petrak.hexcasting.common.msgs.IMessage;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import io.netty.buffer.ByteBuf;
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
 
 public record MsgAltioraUpdateAck(@Nullable AltioraAbility altiora) implements IMessage {

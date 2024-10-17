@@ -2,7 +2,6 @@ package at.petrak.hexcasting.interop.patchouli;
 
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.world.level.Level;
-
 import vazkii.patchouli.api.IComponentProcessor;
 import vazkii.patchouli.api.IVariable;
 import vazkii.patchouli.api.IVariableProvider;

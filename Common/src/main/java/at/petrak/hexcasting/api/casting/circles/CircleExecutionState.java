@@ -1,7 +1,13 @@
 package at.petrak.hexcasting.api.casting.circles;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
+import at.petrak.hexcasting.api.misc.Result;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import com.mojang.datafixers.util.Pair;
 import java.util.*;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -15,15 +21,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.phys.AABB;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
-import at.petrak.hexcasting.api.misc.Result;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.api.utils.HexUtils;
-
 import org.jetbrains.annotations.Nullable;
 
 /** See {@link BlockEntityAbstractImpetus}, this is what's stored in it */

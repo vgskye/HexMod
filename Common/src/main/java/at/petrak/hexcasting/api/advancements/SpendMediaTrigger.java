@@ -1,10 +1,9 @@
 package at.petrak.hexcasting.api.advancements;
 
+import com.google.gson.JsonObject;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
-
-import com.google.gson.JsonObject;
 
 public class SpendMediaTrigger extends SimpleCriterionTrigger<SpendMediaTrigger.Instance> {
 	private static final ResourceLocation ID = new ResourceLocation("hexcasting", "spend_media");

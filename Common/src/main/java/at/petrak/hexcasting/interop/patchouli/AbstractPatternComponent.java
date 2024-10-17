@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.interop.patchouli;
 
-import java.util.List;
-import java.util.function.UnaryOperator;
-
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.world.phys.Vec2;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.casting.math.HexCoord;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
 import at.petrak.hexcasting.client.render.RenderLib;
 import at.petrak.hexcasting.interop.utils.PatternDrawingUtil;
 import at.petrak.hexcasting.interop.utils.PatternEntry;
-
+import com.mojang.datafixers.util.Pair;
+import java.util.List;
+import java.util.function.UnaryOperator;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.world.phys.Vec2;
 import vazkii.patchouli.api.IComponentRenderContext;
 import vazkii.patchouli.api.ICustomComponent;
 import vazkii.patchouli.api.IVariable;

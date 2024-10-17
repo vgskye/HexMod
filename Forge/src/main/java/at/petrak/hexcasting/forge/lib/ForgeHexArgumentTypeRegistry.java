@@ -1,16 +1,14 @@
 package at.petrak.hexcasting.forge.lib;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.common.command.PatternResLocArgument;
+import com.mojang.brigadier.arguments.ArgumentType;
 import net.minecraft.commands.synchronization.ArgumentTypeInfo;
 import net.minecraft.commands.synchronization.ArgumentTypeInfos;
 import net.minecraft.commands.synchronization.SingletonArgumentInfo;
-import com.mojang.brigadier.arguments.ArgumentType;
-
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.common.command.PatternResLocArgument;
 
 // ArgumentTypeInfos.java
 public class ForgeHexArgumentTypeRegistry {

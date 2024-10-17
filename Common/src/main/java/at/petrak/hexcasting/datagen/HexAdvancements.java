@@ -1,17 +1,5 @@
 package at.petrak.hexcasting.datagen;
 
-import java.util.function.Consumer;
-
-import net.minecraft.advancements.Advancement;
-import net.minecraft.advancements.DisplayInfo;
-import net.minecraft.advancements.FrameType;
-import net.minecraft.advancements.critereon.*;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.advancements.FailToCastGreatSpellTrigger;
 import at.petrak.hexcasting.api.advancements.MinMaxLongs;
@@ -23,6 +11,16 @@ import at.petrak.hexcasting.common.items.ItemLoreFragment;
 import at.petrak.hexcasting.common.lib.HexBlocks;
 import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.paucal.api.datagen.PaucalAdvancementSubProvider;
+import java.util.function.Consumer;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.DisplayInfo;
+import net.minecraft.advancements.FrameType;
+import net.minecraft.advancements.critereon.*;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 public class HexAdvancements extends PaucalAdvancementSubProvider {
 	public static final OvercastTrigger.Instance ENLIGHTEN =

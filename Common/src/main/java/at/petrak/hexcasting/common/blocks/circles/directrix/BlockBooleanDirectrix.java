@@ -1,10 +1,15 @@
 package at.petrak.hexcasting.common.blocks.circles.directrix;
 
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
+import at.petrak.hexcasting.api.casting.iota.BooleanIota;
+import at.petrak.hexcasting.api.casting.mishaps.circle.MishapBoolDirectrixEmptyStack;
+import at.petrak.hexcasting.api.casting.mishaps.circle.MishapBoolDirectrixNotBool;
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.Locale;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -19,13 +24,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
-
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.casting.eval.env.CircleCastEnv;
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
-import at.petrak.hexcasting.api.casting.iota.BooleanIota;
-import at.petrak.hexcasting.api.casting.mishaps.circle.MishapBoolDirectrixEmptyStack;
-import at.petrak.hexcasting.api.casting.mishaps.circle.MishapBoolDirectrixNotBool;
 
 // When pops a true, outputs to FACING, when pops a false, outputs to the opposite
 public class BlockBooleanDirectrix extends BlockCircleComponent {

@@ -2,20 +2,17 @@ package at.petrak.hexcasting.fabric.interop.emi;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.mod.HexTags;
 import at.petrak.hexcasting.interop.utils.PhialRecipeStackBuilder;
-
 import dev.emi.emi.EmiUtil;
 import dev.emi.emi.api.recipe.EmiRecipe;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
+import java.util.List;
+import java.util.stream.Collectors;
+import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
 
 public class EmiPhialRecipe implements EmiRecipe {

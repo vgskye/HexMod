@@ -1,17 +1,15 @@
 package at.petrak.hexcasting.common.recipe.ingredient;
 
+import com.google.gson.JsonObject;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-
-import com.google.gson.JsonObject;
 
 public class StateIngredientBlock implements StateIngredient {
 	private final Block block;

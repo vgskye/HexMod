@@ -1,22 +1,20 @@
 package at.petrak.hexcasting.interop.utils;
 
+import at.petrak.hexcasting.api.casting.math.HexCoord;
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.client.render.RenderLib;
+import com.mojang.blaze3d.platform.GlStateManager;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.datafixers.util.Pair;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.util.FastColor;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec2;
-import com.mojang.blaze3d.platform.GlStateManager;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.casting.math.HexCoord;
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.client.render.RenderLib;
 
 public final class PatternDrawingUtil {
 	public static void drawPattern(

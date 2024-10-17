@@ -1,11 +1,9 @@
 package at.petrak.hexcasting.datagen;
 
+import at.petrak.hexcasting.datagen.recipe.builders.FarmersDelightToolIngredient;
 import java.util.EnumMap;
-
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.crafting.Ingredient;
-
-import at.petrak.hexcasting.datagen.recipe.builders.FarmersDelightToolIngredient;
 
 public interface IXplatIngredients {
 	Ingredient glowstoneDust();

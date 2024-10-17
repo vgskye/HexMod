@@ -2,20 +2,17 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.eval.ResolvedPattern;
+import at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv;
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import io.netty.buffer.ByteBuf;
 import java.util.ArrayList;
 import java.util.List;
-
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
-
-import at.petrak.hexcasting.api.casting.eval.ResolvedPattern;
-import at.petrak.hexcasting.api.casting.eval.env.StaffCastEnv;
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-
-import io.netty.buffer.ByteBuf;
 
 /**
  * Sent client->server when the player finishes drawing a pattern. Server will send back a {@link

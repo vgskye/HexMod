@@ -1,13 +1,10 @@
 package at.petrak.hexcasting.api.item;
 
-import java.util.List;
-
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.pigment.FrozenPigment;
-
+import java.util.List;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.Nullable;
 

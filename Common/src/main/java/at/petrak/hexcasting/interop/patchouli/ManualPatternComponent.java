@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.interop.patchouli;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.UnaryOperator;
-
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.casting.math.HexCoord;
 import at.petrak.hexcasting.api.casting.math.HexDir;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.annotations.SerializedName;
+import com.mojang.datafixers.util.Pair;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.UnaryOperator;
 import vazkii.patchouli.api.IVariable;
 
 /** Provide the pattern(s) manually */

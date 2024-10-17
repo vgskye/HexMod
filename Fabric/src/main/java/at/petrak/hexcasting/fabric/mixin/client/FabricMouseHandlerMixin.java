@@ -1,9 +1,7 @@
 package at.petrak.hexcasting.fabric.mixin.client;
 
-import net.minecraft.client.MouseHandler;
-
 import at.petrak.hexcasting.fabric.event.MouseScrollCallback;
-
+import net.minecraft.client.MouseHandler;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

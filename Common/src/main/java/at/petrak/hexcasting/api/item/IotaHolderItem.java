@@ -1,7 +1,12 @@
 package at.petrak.hexcasting.api.item;
 
+import at.petrak.hexcasting.api.casting.iota.Iota;
+import at.petrak.hexcasting.api.casting.iota.IotaType;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.api.utils.NBTHelper;
+import at.petrak.hexcasting.client.ClientTickCounter;
+import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
 import java.util.List;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
@@ -11,14 +16,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-
-import at.petrak.hexcasting.api.casting.iota.Iota;
-import at.petrak.hexcasting.api.casting.iota.IotaType;
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.api.utils.NBTHelper;
-import at.petrak.hexcasting.client.ClientTickCounter;
-import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
-
 import org.jetbrains.annotations.Nullable;
 
 /**

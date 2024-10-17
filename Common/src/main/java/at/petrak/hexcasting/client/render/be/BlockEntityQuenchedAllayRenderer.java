@@ -1,5 +1,11 @@
 package at.petrak.hexcasting.client.render.be;
 
+import at.petrak.hexcasting.client.RegisterClientStuff;
+import at.petrak.hexcasting.client.render.GaslightingTracker;
+import at.petrak.hexcasting.common.blocks.BlockQuenchedAllay;
+import at.petrak.hexcasting.common.blocks.entity.BlockEntityQuenchedAllay;
+import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.BlockRenderDispatcher;
@@ -7,13 +13,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.phys.AABB;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-import at.petrak.hexcasting.client.RegisterClientStuff;
-import at.petrak.hexcasting.client.render.GaslightingTracker;
-import at.petrak.hexcasting.common.blocks.BlockQuenchedAllay;
-import at.petrak.hexcasting.common.blocks.entity.BlockEntityQuenchedAllay;
-import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
 
 // TODO: this doesn't cover the block being *behind* something. Is it possible to cleanly do that?
 // it would probably require some depth-texture bullshit that I don't want to worry about

@@ -3,21 +3,6 @@ package at.petrak.hexcasting.api.casting.eval.env;
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 import static at.petrak.hexcasting.api.utils.MathUtils.DOUBLE_EPSILON;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Predicate;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.util.Mth;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.GameType;
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
 import at.petrak.hexcasting.api.advancements.HexAdvancementTriggers;
@@ -34,7 +19,19 @@ import at.petrak.hexcasting.api.utils.HexUtils;
 import at.petrak.hexcasting.api.utils.MediaHelper;
 import at.petrak.hexcasting.common.lib.HexDamageTypes;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.Mth;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.GameType;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class PlayerBasedCastEnv extends CastingEnvironment {

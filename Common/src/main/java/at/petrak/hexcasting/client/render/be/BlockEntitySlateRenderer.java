@@ -1,7 +1,13 @@
 package at.petrak.hexcasting.client.render.be;
 
+import at.petrak.hexcasting.client.render.PatternTextureManager;
+import at.petrak.hexcasting.client.render.RenderLib;
+import at.petrak.hexcasting.common.blocks.circles.BlockEntitySlate;
+import at.petrak.hexcasting.common.blocks.circles.BlockSlate;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
 import java.util.ArrayList;
-
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
@@ -9,14 +15,6 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.state.properties.AttachFace;
 import net.minecraft.world.phys.Vec2;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
-
-import at.petrak.hexcasting.client.render.PatternTextureManager;
-import at.petrak.hexcasting.client.render.RenderLib;
-import at.petrak.hexcasting.common.blocks.circles.BlockEntitySlate;
-import at.petrak.hexcasting.common.blocks.circles.BlockSlate;
 
 public class BlockEntitySlateRenderer implements BlockEntityRenderer<BlockEntitySlate> {
 	public BlockEntitySlateRenderer(BlockEntityRendererProvider.Context ctx) {

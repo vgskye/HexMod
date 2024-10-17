@@ -1,7 +1,13 @@
 package at.petrak.hexcasting.client.render;
 
+import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
+import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
+import at.petrak.hexcasting.api.casting.iota.IotaType;
+import at.petrak.hexcasting.api.client.ScryingLensOverlayRegistry;
+import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
+import at.petrak.hexcasting.common.lib.HexBlocks;
+import com.mojang.datafixers.util.Pair;
 import java.util.function.UnaryOperator;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -18,14 +24,6 @@ import net.minecraft.world.level.block.state.properties.ComparatorMode;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.RailShape;
 import net.minecraft.world.level.material.MapColor;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.block.circle.BlockAbstractImpetus;
-import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
-import at.petrak.hexcasting.api.casting.iota.IotaType;
-import at.petrak.hexcasting.api.client.ScryingLensOverlayRegistry;
-import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
-import at.petrak.hexcasting.common.lib.HexBlocks;
 
 public class ScryingLensOverlays {
 	public static void addScryingLensStuff() {

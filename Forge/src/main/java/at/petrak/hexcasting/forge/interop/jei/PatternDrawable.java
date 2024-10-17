@@ -1,20 +1,17 @@
 package at.petrak.hexcasting.forge.interop.jei;
 
-import java.util.List;
-
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.phys.Vec2;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.casting.math.HexCoord;
 import at.petrak.hexcasting.api.mod.HexTags;
 import at.petrak.hexcasting.api.utils.HexUtils;
 import at.petrak.hexcasting.interop.utils.PatternDrawingUtil;
 import at.petrak.hexcasting.interop.utils.PatternEntry;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
+import com.mojang.datafixers.util.Pair;
+import java.util.List;
 import mezz.jei.api.gui.drawable.IDrawable;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.phys.Vec2;
 
 public class PatternDrawable implements IDrawable {
 	private final int width;

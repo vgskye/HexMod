@@ -1,17 +1,5 @@
 package at.petrak.hexcasting.common.lib;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.BiConsumer;
-import java.util.function.BiFunction;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.state.BlockState;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.common.blocks.BlockQuenchedAllay;
 import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
@@ -22,6 +10,16 @@ import at.petrak.hexcasting.common.blocks.circles.impetuses.BlockEntityRightClic
 import at.petrak.hexcasting.common.blocks.entity.BlockEntityConjured;
 import at.petrak.hexcasting.common.blocks.entity.BlockEntityQuenchedAllay;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class HexBlockEntities {
 	public static void registerTiles(BiConsumer<BlockEntityType<?>, ResourceLocation> r) {

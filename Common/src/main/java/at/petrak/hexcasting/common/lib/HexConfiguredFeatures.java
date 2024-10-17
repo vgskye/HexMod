@@ -1,11 +1,10 @@
 package at.petrak.hexcasting.common.lib;
 
+import at.petrak.hexcasting.api.HexAPI;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-
-import at.petrak.hexcasting.api.HexAPI;
 
 public class HexConfiguredFeatures {
 	public static final ResourceKey<ConfiguredFeature<?, ?>> AMETHYST_EDIFIED_TREE =

@@ -3,12 +3,6 @@ package at.petrak.hexcasting.common.casting.arithmetic.operator.vec;
 import static at.petrak.hexcasting.common.lib.hex.HexIotaTypes.DOUBLE;
 import static at.petrak.hexcasting.common.lib.hex.HexIotaTypes.VEC3;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.function.BiFunction;
-
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.casting.arithmetic.IterPair;
 import at.petrak.hexcasting.api.casting.arithmetic.TripleIterable;
 import at.petrak.hexcasting.api.casting.arithmetic.operator.OperatorBasic;
@@ -22,7 +16,10 @@ import at.petrak.hexcasting.api.casting.math.HexPattern;
 import at.petrak.hexcasting.api.casting.mishaps.Mishap;
 import at.petrak.hexcasting.api.casting.mishaps.MishapDivideByZero;
 import at.petrak.hexcasting.common.casting.arithmetic.DoubleArithmetic;
-
+import java.util.List;
+import java.util.Objects;
+import java.util.function.BiFunction;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
 public class OperatorVec3Delegating extends OperatorBasic {

@@ -1,11 +1,10 @@
 package at.petrak.hexcasting.common.command;
 
+import at.petrak.hexcasting.server.ScrungledPatternsSave;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-
-import at.petrak.hexcasting.server.ScrungledPatternsSave;
 
 public class RecalcPatternsCommand {
 	public static void add(LiteralArgumentBuilder<CommandSourceStack> cmd) {

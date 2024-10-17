@@ -2,15 +2,13 @@ package at.petrak.hexcasting.common.lib.hex;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.function.BiConsumer;
-
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.casting.castables.SpecialHandler;
 import at.petrak.hexcasting.common.casting.actions.math.SpecialHandlerNumberLiteral;
 import at.petrak.hexcasting.common.casting.actions.stack.SpecialHandlerMask;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.function.BiConsumer;
+import net.minecraft.resources.ResourceLocation;
 
 public class HexSpecialHandlers {
 	private static final Map<ResourceLocation, SpecialHandler.Factory<?>> SPECIAL_HANDLERS =

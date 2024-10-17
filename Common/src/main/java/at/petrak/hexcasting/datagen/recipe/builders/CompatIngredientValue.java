@@ -1,13 +1,11 @@
 package at.petrak.hexcasting.datagen.recipe.builders;
 
+import com.google.gson.JsonObject;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.stream.Stream;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
-
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.NotNull;
 
 public class CompatIngredientValue implements Ingredient.Value {

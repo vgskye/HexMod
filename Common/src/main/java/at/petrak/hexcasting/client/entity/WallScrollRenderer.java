@@ -2,8 +2,14 @@ package at.petrak.hexcasting.client.entity;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.client.render.PatternTextureManager;
+import at.petrak.hexcasting.client.render.RenderLib;
+import at.petrak.hexcasting.common.entities.EntityWallScroll;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.math.Axis;
 import java.util.List;
-
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -14,15 +20,6 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec2;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.math.Axis;
-
-import at.petrak.hexcasting.client.render.PatternTextureManager;
-import at.petrak.hexcasting.client.render.RenderLib;
-import at.petrak.hexcasting.common.entities.EntityWallScroll;
-
 import org.joml.Matrix3f;
 import org.joml.Matrix4f;
 

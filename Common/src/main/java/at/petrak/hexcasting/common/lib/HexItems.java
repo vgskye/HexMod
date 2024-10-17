@@ -2,16 +2,6 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.*;
-import java.util.function.BiConsumer;
-import java.util.function.Supplier;
-
-import net.minecraft.Util;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.*;
-
 import at.petrak.hexcasting.api.misc.MediaConstants;
 import at.petrak.hexcasting.common.items.ItemJewelerHammer;
 import at.petrak.hexcasting.common.items.ItemLens;
@@ -24,8 +14,15 @@ import at.petrak.hexcasting.common.items.pigment.ItemPridePigment;
 import at.petrak.hexcasting.common.items.pigment.ItemUUIDPigment;
 import at.petrak.hexcasting.common.items.storage.*;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import com.google.common.base.Suppliers;
+import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
+import net.minecraft.Util;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.*;
 import org.jetbrains.annotations.Nullable;
 
 // https://github.com/VazkiiMods/Botania/blob/2c4f7fdf9ebf0c0afa1406dfe1322841133d75fa/Common/src/main/java/vazkii/botania/common/item/ModItems.java

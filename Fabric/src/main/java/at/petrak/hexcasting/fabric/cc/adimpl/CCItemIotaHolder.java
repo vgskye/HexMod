@@ -1,16 +1,13 @@
 package at.petrak.hexcasting.fabric.cc.adimpl;
 
-import java.util.function.Function;
-
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.casting.iota.IotaType;
 import at.petrak.hexcasting.api.item.IotaHolderItem;
 import at.petrak.hexcasting.fabric.cc.HexCardinalComponents;
-
 import dev.onyxstudios.cca.api.v3.item.ItemComponent;
+import java.util.function.Function;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class CCItemIotaHolder extends ItemComponent implements CCIotaHolder {

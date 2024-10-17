@@ -1,14 +1,13 @@
 package at.petrak.hexcasting.fabric.interop.emi;
 
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.renderer.GameRenderer;
 import com.mojang.blaze3d.systems.RenderSystem;
-
 import dev.emi.emi.api.render.EmiRender;
 import dev.emi.emi.api.render.EmiTexture;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.widget.Bounds;
 import dev.emi.emi.api.widget.SlotWidget;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.renderer.GameRenderer;
 
 public class TheCoolerSlotWidget extends SlotWidget {
 

@@ -2,16 +2,14 @@ package at.petrak.hexcasting.common.recipe;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.HexAPI;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
-
-import at.petrak.hexcasting.api.HexAPI;
 
 public class HexRecipeStuffRegistry {
 	public static void registerSerializers(BiConsumer<RecipeSerializer<?>, ResourceLocation> r) {

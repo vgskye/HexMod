@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.api.casting.eval;
 
+import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.casting.eval.vm.CastingImage;
 
 public interface CastingEnvironmentComponent {
 	Key<?> getKey();

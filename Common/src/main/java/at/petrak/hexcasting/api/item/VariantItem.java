@@ -1,8 +1,7 @@
 package at.petrak.hexcasting.api.item;
 
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.utils.NBTHelper;
+import net.minecraft.world.item.ItemStack;
 
 /**
  * Items that have multiple different otherwise identical visual variants can implement this

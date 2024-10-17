@@ -1,11 +1,8 @@
 package at.petrak.hexcasting.api.item;
 
-import java.util.UUID;
-
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.pigment.ColorProvider;
-
+import java.util.UUID;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.ApiStatus;
 
 /**

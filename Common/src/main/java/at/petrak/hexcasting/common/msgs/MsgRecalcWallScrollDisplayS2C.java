@@ -2,13 +2,11 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.common.entities.EntityWallScroll;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
-
-import at.petrak.hexcasting.common.entities.EntityWallScroll;
-
-import io.netty.buffer.ByteBuf;
 
 /** Sent S->C to have a wall scroll recalculate its pattern, to get readability offset. */
 public record MsgRecalcWallScrollDisplayS2C(int entityId, boolean showStrokeOrder)

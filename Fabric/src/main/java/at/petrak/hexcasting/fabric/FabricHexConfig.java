@@ -3,27 +3,24 @@ package at.petrak.hexcasting.fabric;
 import static at.petrak.hexcasting.api.mod.HexConfig.anyMatchResLoc;
 import static at.petrak.hexcasting.api.mod.HexConfig.noneMatch;
 
-import java.util.List;
-
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.Mth;
-import net.minecraft.world.level.Level;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.mod.HexConfig;
 import at.petrak.hexcasting.common.loot.HexLootHandler;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import com.google.gson.GsonBuilder;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
+import java.util.List;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import me.shedaniel.autoconfig.serializer.PartitioningSerializer;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
+import net.minecraft.world.level.Level;
 
 @Config(name = HexAPI.MOD_ID)
 @Config.Gui.Background("minecraft:textures/block/calcite.png")

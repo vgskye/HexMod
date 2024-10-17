@@ -1,12 +1,9 @@
 package at.petrak.hexcasting.api.addldata;
 
-import java.util.List;
-
-import net.minecraft.server.level.ServerLevel;
-
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.pigment.FrozenPigment;
-
+import java.util.List;
+import net.minecraft.server.level.ServerLevel;
 import org.jetbrains.annotations.Nullable;
 
 public interface ADHexHolder {

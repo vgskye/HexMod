@@ -1,13 +1,11 @@
 package at.petrak.hexcasting.forge.cap.adimpl;
 
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADIotaHolder;
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.item.IotaHolderItem;
-
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 public record CapItemIotaHolder(IotaHolderItem holder, ItemStack stack) implements ADIotaHolder {

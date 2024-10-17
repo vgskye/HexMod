@@ -2,15 +2,12 @@ package at.petrak.hexcasting.forge;
 
 import static at.petrak.hexcasting.api.mod.HexConfig.noneMatch;
 
+import at.petrak.hexcasting.api.mod.HexConfig;
 import java.util.List;
-
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
-
 import net.minecraftforge.common.ForgeConfigSpec;
-
-import at.petrak.hexcasting.api.mod.HexConfig;
 
 public class ForgeHexConfig implements HexConfig.CommonConfigAccess {
 	private static ForgeConfigSpec.LongValue dustMediaAmount;

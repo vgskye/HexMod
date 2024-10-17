@@ -1,10 +1,9 @@
 package at.petrak.hexcasting.api.casting.eval.env;
 
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.casting.circles.CircleExecutionState;
 import at.petrak.hexcasting.api.casting.eval.MishapEnvironment;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.phys.Vec3;
 
 public class CircleMishapEnv extends MishapEnvironment {
 	protected final CircleExecutionState execState;

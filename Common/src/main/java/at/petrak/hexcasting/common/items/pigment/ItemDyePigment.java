@@ -1,14 +1,12 @@
 package at.petrak.hexcasting.common.items.pigment;
 
+import at.petrak.hexcasting.api.item.PigmentItem;
+import at.petrak.hexcasting.api.pigment.ColorProvider;
 import java.util.UUID;
-
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.item.PigmentItem;
-import at.petrak.hexcasting.api.pigment.ColorProvider;
 
 public class ItemDyePigment extends Item implements PigmentItem {
 	private final DyeColor dyeColor;

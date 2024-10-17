@@ -2,15 +2,13 @@ package at.petrak.hexcasting.fabric.interop.emi;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.List;
-
-import net.minecraft.resources.ResourceLocation;
-
 import dev.emi.emi.api.recipe.EmiRecipe;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.WidgetHolder;
+import java.util.List;
+import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
 
 public record EmiBrainsweepRecipe(

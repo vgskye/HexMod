@@ -1,19 +1,17 @@
 package at.petrak.hexcasting.common.blocks.entity;
 
-import java.util.Random;
-
-import net.minecraft.core.BlockPos;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.block.HexBlockEntity;
 import at.petrak.hexcasting.api.pigment.FrozenPigment;
 import at.petrak.hexcasting.common.blocks.BlockConjured;
 import at.petrak.hexcasting.common.blocks.BlockConjuredLight;
 import at.petrak.hexcasting.common.lib.HexBlockEntities;
 import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
+import java.util.Random;
+import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 
 public class BlockEntityConjured extends HexBlockEntity {
 	private static final Random RANDOM = new Random();

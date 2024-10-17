@@ -1,19 +1,16 @@
 package at.petrak.hexcasting.api.casting.iota;
 
+import at.petrak.hexcasting.api.casting.SpellList;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
 import java.util.ArrayList;
 import java.util.List;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
-
-import at.petrak.hexcasting.api.casting.SpellList;
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

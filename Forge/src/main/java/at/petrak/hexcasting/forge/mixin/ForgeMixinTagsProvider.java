@@ -1,11 +1,8 @@
 package at.petrak.hexcasting.forge.mixin;
 
-import net.minecraft.data.tags.TagsProvider;
-
-import net.minecraftforge.common.data.ExistingFileHelper;
-
 import at.petrak.hexcasting.forge.datagen.TagsProviderEFHSetter;
-
+import net.minecraft.data.tags.TagsProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

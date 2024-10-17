@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.fabric.cc;
 
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.player.Player;
-
 import at.petrak.hexcasting.api.player.AltioraAbility;
-
 import dev.onyxstudios.cca.api.v3.component.Component;
 import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.entity.player.Player;
 import org.jetbrains.annotations.Nullable;
 
 public class CCAltiora implements Component, AutoSyncedComponent {

@@ -2,15 +2,6 @@ package at.petrak.hexcasting.fabric.cc;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.function.Function;
-
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.decoration.ItemFrame;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.Items;
-
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
 import at.petrak.hexcasting.api.addldata.ItemDelegatingEntityIotaHolder;
 import at.petrak.hexcasting.api.casting.iota.DoubleIota;
@@ -21,7 +12,6 @@ import at.petrak.hexcasting.common.entities.EntityWallScroll;
 import at.petrak.hexcasting.common.lib.HexBlocks;
 import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.hexcasting.fabric.cc.adimpl.*;
-
 import dev.onyxstudios.cca.api.v3.component.ComponentFactory;
 import dev.onyxstudios.cca.api.v3.component.ComponentKey;
 import dev.onyxstudios.cca.api.v3.component.ComponentRegistry;
@@ -30,6 +20,13 @@ import dev.onyxstudios.cca.api.v3.entity.EntityComponentInitializer;
 import dev.onyxstudios.cca.api.v3.entity.RespawnCopyStrategy;
 import dev.onyxstudios.cca.api.v3.item.ItemComponentFactoryRegistry;
 import dev.onyxstudios.cca.api.v3.item.ItemComponentInitializer;
+import java.util.function.Function;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.decoration.ItemFrame;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.Items;
 
 public class HexCardinalComponents implements EntityComponentInitializer, ItemComponentInitializer {
 	// entities

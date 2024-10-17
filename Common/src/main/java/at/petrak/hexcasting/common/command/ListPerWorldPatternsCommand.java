@@ -1,20 +1,5 @@
 package at.petrak.hexcasting.common.command;
 
-import java.util.Collection;
-import java.util.List;
-
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.Commands;
-import net.minecraft.commands.arguments.EntityArgument;
-import net.minecraft.commands.arguments.ResourceLocationArgument;
-import net.minecraft.core.Registry;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.item.ItemStack;
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.iota.PatternIota;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
@@ -25,6 +10,19 @@ import at.petrak.hexcasting.common.items.storage.ItemScroll;
 import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.hexcasting.server.ScrungledPatternsSave;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import java.util.Collection;
+import java.util.List;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.EntityArgument;
+import net.minecraft.commands.arguments.ResourceLocationArgument;
+import net.minecraft.core.Registry;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.ItemStack;
 
 public class ListPerWorldPatternsCommand {
 	public static void add(LiteralArgumentBuilder<CommandSourceStack> cmd) {

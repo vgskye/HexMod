@@ -1,8 +1,8 @@
 package at.petrak.hexcasting.common.recipe.ingredient.brainsweep;
 
+import com.google.gson.JsonObject;
 import java.util.List;
 import java.util.Objects;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -12,8 +12,6 @@ import net.minecraft.util.GsonHelper;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
-
-import com.google.gson.JsonObject;
 
 public class EntityTypeIngredient extends BrainsweepeeIngredient {
 	public final EntityType<?> entityType;

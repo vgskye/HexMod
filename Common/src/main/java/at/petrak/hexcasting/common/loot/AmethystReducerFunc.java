@@ -1,5 +1,9 @@
 package at.petrak.hexcasting.common.loot;
 
+import at.petrak.hexcasting.common.lib.HexLootFunctions;
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonSerializationContext;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -7,12 +11,6 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.functions.LootItemConditionalFunction;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-
-import at.petrak.hexcasting.common.lib.HexLootFunctions;
-
-import com.google.gson.JsonDeserializationContext;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonSerializationContext;
 
 public class AmethystReducerFunc extends LootItemConditionalFunction {
 	public final double delta;

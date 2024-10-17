@@ -1,7 +1,10 @@
 package at.petrak.hexcasting.common.recipe;
 
+import at.petrak.hexcasting.api.mod.HexTags;
+import at.petrak.hexcasting.common.items.storage.ItemFocus;
+import at.petrak.hexcasting.common.items.storage.ItemSpellbook;
+import at.petrak.hexcasting.common.lib.HexItems;
 import java.util.Locale;
-
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
@@ -12,12 +15,6 @@ import net.minecraft.world.item.crafting.CustomRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.api.mod.HexTags;
-import at.petrak.hexcasting.common.items.storage.ItemFocus;
-import at.petrak.hexcasting.common.items.storage.ItemSpellbook;
-import at.petrak.hexcasting.common.lib.HexItems;
-
 import org.jetbrains.annotations.NotNull;
 
 public class SealThingsRecipe extends CustomRecipe {

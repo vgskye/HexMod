@@ -2,13 +2,6 @@ package at.petrak.hexcasting.forge.interop.jei;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import java.util.List;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.common.casting.actions.spells.OpEdifySapling;
 import at.petrak.hexcasting.common.casting.actions.spells.OpMakeBattery;
@@ -17,13 +10,17 @@ import at.petrak.hexcasting.common.lib.HexItems;
 import at.petrak.hexcasting.common.recipe.BrainsweepRecipe;
 import at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry;
 import at.petrak.hexcasting.interop.utils.PhialRecipeStackBuilder;
-
+import java.util.List;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
+import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 @JeiPlugin

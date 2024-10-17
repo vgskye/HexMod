@@ -2,19 +2,17 @@ package at.petrak.hexcasting.datagen.tag;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
+import at.petrak.hexcasting.api.mod.HexTags;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import at.petrak.hexcasting.xplat.Platform;
 import java.util.concurrent.CompletableFuture;
-
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
-
-import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
-import at.petrak.hexcasting.api.mod.HexTags;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-import at.petrak.hexcasting.xplat.Platform;
 
 public class HexActionTagProvider extends TagsProvider<ActionRegistryEntry> {
 	public HexActionTagProvider(

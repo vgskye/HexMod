@@ -1,10 +1,8 @@
 package at.petrak.hexcasting.forge.cap.adimpl;
 
-import java.util.function.Supplier;
-
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
+import java.util.function.Supplier;
+import net.minecraft.world.item.ItemStack;
 
 /** Things that always hold a constant amount of media, like amethyst */
 public record CapStaticMediaHolder(

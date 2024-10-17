@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.api.casting.arithmetic.engine;
 
-import java.util.List;
-
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.casting.math.HexPattern;
+import java.util.List;
 
 public class NoOperatorCandidatesException extends RuntimeException {
 	HexPattern pattern;

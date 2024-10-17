@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.common.msgs;
 
+import io.netty.buffer.Unpooled;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
-
-import io.netty.buffer.Unpooled;
 
 // https://github.com/VazkiiMods/Botania/blob/1.18.x/Common/src/main/java/vazkii/botania/network/IPacket.java
 // yoink

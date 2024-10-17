@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.forge.cap.adimpl;
 
-import java.util.UUID;
-
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADPigment;
 import at.petrak.hexcasting.api.item.PigmentItem;
 import at.petrak.hexcasting.api.pigment.ColorProvider;
+import java.util.UUID;
+import net.minecraft.world.item.ItemStack;
 
 public record CapItemPigment(PigmentItem holder, ItemStack stack) implements ADPigment {
 	@Override

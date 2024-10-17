@@ -1,21 +1,5 @@
 package at.petrak.hexcasting.fabric.datagen;
 
-import java.util.EnumMap;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Stream;
-
-import net.minecraft.core.registries.Registries;
-import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-
-import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.datagen.HexLootTables;
 import at.petrak.hexcasting.datagen.IXplatIngredients;
@@ -26,8 +10,20 @@ import at.petrak.hexcasting.datagen.tag.HexBlockTagProvider;
 import at.petrak.hexcasting.datagen.tag.HexItemTagProvider;
 import at.petrak.hexcasting.fabric.recipe.FabricModConditionalIngredient;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
 import com.google.gson.JsonObject;
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Stream;
+import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 
 public class HexFabricDataGenerators implements DataGeneratorEntrypoint {
 	@Override

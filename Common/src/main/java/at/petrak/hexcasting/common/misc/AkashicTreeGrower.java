@@ -1,15 +1,12 @@
 package at.petrak.hexcasting.common.misc;
 
+import at.petrak.hexcasting.common.lib.HexConfiguredFeatures;
+import com.google.common.collect.Lists;
 import java.util.List;
-
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-
-import at.petrak.hexcasting.common.lib.HexConfiguredFeatures;
-
-import com.google.common.collect.Lists;
 
 public class AkashicTreeGrower extends AbstractTreeGrower {
 	public static final AkashicTreeGrower INSTANCE = new AkashicTreeGrower();

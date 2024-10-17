@@ -2,9 +2,13 @@ package at.petrak.hexcasting.client.gui;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.client.render.RenderLib;
+import at.petrak.hexcasting.common.misc.PatternTooltip;
+import com.mojang.blaze3d.platform.GlStateManager;
+import com.mojang.blaze3d.systems.RenderSystem;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
@@ -12,13 +16,6 @@ import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.phys.Vec2;
-import com.mojang.blaze3d.platform.GlStateManager;
-import com.mojang.blaze3d.systems.RenderSystem;
-
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.client.render.RenderLib;
-import at.petrak.hexcasting.common.misc.PatternTooltip;
-
 import org.jetbrains.annotations.Nullable;
 
 // https://github.com/VazkiiMods/Botania/blob/95bd2d3fbc857b7c102687554e1d1b112f8af436/Xplat/src/main/java/vazkii/botania/client/gui/ManaBarTooltipComponent.java

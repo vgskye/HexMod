@@ -2,17 +2,15 @@ package at.petrak.hexcasting.common.lib.hex;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.casting.iota.*;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
 import javax.annotation.ParametersAreNonnullByDefault;
-
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.casting.iota.*;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
 
 /**
  * Stores the registry for iota types, some utility methods, and all the types Hexcasting itself

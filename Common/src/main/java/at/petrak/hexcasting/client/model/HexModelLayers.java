@@ -4,7 +4,6 @@ import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
-
 import net.minecraft.client.model.ElytraModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;

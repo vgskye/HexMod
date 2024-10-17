@@ -2,19 +2,17 @@ package at.petrak.hexcasting.fabric.interop.emi;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import net.minecraft.resources.ResourceLocation;
-
 import at.petrak.hexcasting.api.mod.HexTags;
 import at.petrak.hexcasting.common.recipe.BrainsweepRecipe;
 import at.petrak.hexcasting.common.recipe.HexRecipeStuffRegistry;
 import at.petrak.hexcasting.interop.utils.PhialRecipeStackBuilder;
-
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.render.EmiTexture;
 import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
+import net.minecraft.resources.ResourceLocation;
 
 public class HexEMIPlugin implements EmiPlugin {
 	private static final ResourceLocation BRAINSWEEP_ID = modLoc("brainsweep");

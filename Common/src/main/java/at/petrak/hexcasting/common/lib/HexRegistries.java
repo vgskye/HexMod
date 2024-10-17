@@ -2,15 +2,14 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
-
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.arithmetic.Arithmetic;
 import at.petrak.hexcasting.api.casting.castables.SpecialHandler;
 import at.petrak.hexcasting.api.casting.eval.sideeffects.EvalSound;
 import at.petrak.hexcasting.api.casting.eval.vm.ContinuationFrame;
 import at.petrak.hexcasting.api.casting.iota.IotaType;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceKey;
 
 public class HexRegistries {
 	public static final ResourceKey<Registry<ActionRegistryEntry>> ACTION =

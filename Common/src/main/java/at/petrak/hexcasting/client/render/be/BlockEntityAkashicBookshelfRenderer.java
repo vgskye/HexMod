@@ -1,20 +1,19 @@
 package at.petrak.hexcasting.client.render.be;
 
+import at.petrak.hexcasting.api.casting.math.HexPattern;
+import at.petrak.hexcasting.client.render.PatternTextureManager;
+import at.petrak.hexcasting.client.render.RenderLib;
+import at.petrak.hexcasting.common.blocks.akashic.BlockAkashicBookshelf;
+import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.math.Axis;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.util.Mth;
 import net.minecraft.world.phys.Vec2;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.math.Axis;
-
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-import at.petrak.hexcasting.client.render.PatternTextureManager;
-import at.petrak.hexcasting.client.render.RenderLib;
-import at.petrak.hexcasting.common.blocks.akashic.BlockAkashicBookshelf;
-import at.petrak.hexcasting.common.blocks.akashic.BlockEntityAkashicBookshelf;
 
 public class BlockEntityAkashicBookshelfRenderer
 		implements BlockEntityRenderer<BlockEntityAkashicBookshelf> {

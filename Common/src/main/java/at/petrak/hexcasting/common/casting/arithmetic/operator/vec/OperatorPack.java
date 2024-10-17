@@ -1,9 +1,5 @@
 package at.petrak.hexcasting.common.casting.arithmetic.operator.vec;
 
-import java.util.List;
-
-import net.minecraft.world.phys.Vec3;
-
 import at.petrak.hexcasting.api.casting.arithmetic.operator.OperatorBasic;
 import at.petrak.hexcasting.api.casting.arithmetic.predicates.IotaMultiPredicate;
 import at.petrak.hexcasting.api.casting.arithmetic.predicates.IotaPredicate;
@@ -11,7 +7,8 @@ import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.casting.iota.Vec3Iota;
 import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
-
+import java.util.List;
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
 public class OperatorPack extends OperatorBasic {

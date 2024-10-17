@@ -1,7 +1,11 @@
 package at.petrak.hexcasting.datagen.tag;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.mod.HexTags;
+import at.petrak.hexcasting.common.lib.HexItems;
+import at.petrak.hexcasting.xplat.IXplatTags;
+import at.petrak.paucal.api.datagen.PaucalItemTagProvider;
 import java.util.concurrent.CompletableFuture;
-
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -11,12 +15,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.mod.HexTags;
-import at.petrak.hexcasting.common.lib.HexItems;
-import at.petrak.hexcasting.xplat.IXplatTags;
-import at.petrak.paucal.api.datagen.PaucalItemTagProvider;
 
 public class HexItemTagProvider extends PaucalItemTagProvider {
 	private final IXplatTags xtags;

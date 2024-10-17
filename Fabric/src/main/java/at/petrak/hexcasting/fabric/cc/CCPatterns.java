@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.fabric.cc;
 
+import at.petrak.hexcasting.api.casting.eval.ResolvedPattern;
+import dev.onyxstudios.cca.api.v3.component.Component;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
-
-import at.petrak.hexcasting.api.casting.eval.ResolvedPattern;
-
-import dev.onyxstudios.cca.api.v3.component.Component;
 
 public class CCPatterns implements Component {
 	public static final String TAG_PATTERNS = "patterns";

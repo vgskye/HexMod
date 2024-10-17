@@ -1,9 +1,7 @@
 import java.util.List;
-
 import net.minecraft.world.level.levelgen.SingleThreadedRandomSource;
 import net.minecraft.world.level.levelgen.synth.PerlinNoise;
 import net.minecraft.world.level.levelgen.synth.SimplexNoise;
-
 import org.junit.jupiter.api.Test;
 
 public class WhatRangeDoTheNoisesOutputAnywaysTest {

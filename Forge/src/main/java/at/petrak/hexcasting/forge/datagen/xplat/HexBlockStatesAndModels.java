@@ -2,17 +2,6 @@ package at.petrak.hexcasting.forge.datagen.xplat;
 
 import static net.minecraftforge.client.model.generators.ModelProvider.BLOCK_FOLDER;
 
-import net.minecraft.core.Direction;
-import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-
-import net.minecraftforge.client.model.generators.BlockModelBuilder;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
-import net.minecraftforge.client.model.generators.ModelBuilder;
-import net.minecraftforge.common.data.ExistingFileHelper;
-
 import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
 import at.petrak.hexcasting.common.blocks.akashic.BlockAkashicBookshelf;
@@ -21,6 +10,15 @@ import at.petrak.hexcasting.common.blocks.circles.directrix.BlockBooleanDirectri
 import at.petrak.hexcasting.common.blocks.circles.directrix.BlockRedstoneDirectrix;
 import at.petrak.hexcasting.common.lib.HexBlocks;
 import at.petrak.paucal.api.forge.datagen.PaucalBlockStateAndModelProvider;
+import net.minecraft.core.Direction;
+import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraftforge.client.model.generators.BlockModelBuilder;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelBuilder;
+import net.minecraftforge.common.data.ExistingFileHelper;
 
 public class HexBlockStatesAndModels extends PaucalBlockStateAndModelProvider {
 	public HexBlockStatesAndModels(PackOutput output, ExistingFileHelper exFileHelper) {

@@ -1,21 +1,17 @@
 package at.petrak.hexcasting.forge.loot;
 
-import java.util.function.Supplier;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import com.mojang.serialization.Codec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
-
-import net.minecraftforge.common.loot.LootModifier;
-
 import at.petrak.hexcasting.common.loot.AmethystReducerFunc;
 import at.petrak.hexcasting.common.loot.HexLootHandler;
 import at.petrak.hexcasting.forge.lib.ForgeHexLootMods;
-
 import com.google.common.base.Suppliers;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import java.util.function.Supplier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraftforge.common.loot.LootModifier;
 import org.jetbrains.annotations.NotNull;
 
 public class ForgeHexAmethystLootMod extends LootModifier {

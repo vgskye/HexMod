@@ -1,15 +1,14 @@
 package at.petrak.hexcasting.api.casting.eval.env;
 
+import at.petrak.hexcasting.api.casting.eval.MishapEnvironment;
+import at.petrak.hexcasting.api.casting.mishaps.Mishap;
+import at.petrak.hexcasting.common.lib.HexDamageTypes;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.casting.eval.MishapEnvironment;
-import at.petrak.hexcasting.api.casting.mishaps.Mishap;
-import at.petrak.hexcasting.common.lib.HexDamageTypes;
 
 public class PlayerBasedMishapEnv extends MishapEnvironment {
 	public PlayerBasedMishapEnv(ServerPlayer player) {

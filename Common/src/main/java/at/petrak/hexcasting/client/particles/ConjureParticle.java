@@ -1,24 +1,21 @@
 package at.petrak.hexcasting.client.particles;
 
-import java.util.Random;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.particle.*;
-import net.minecraft.client.renderer.texture.TextureAtlas;
-import net.minecraft.client.renderer.texture.TextureManager;
-import net.minecraft.util.FastColor;
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
+import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.BufferBuilder;
 import com.mojang.blaze3d.vertex.DefaultVertexFormat;
 import com.mojang.blaze3d.vertex.Tesselator;
 import com.mojang.blaze3d.vertex.VertexFormat;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.common.particles.ConjureParticleOptions;
-import at.petrak.hexcasting.xplat.IClientXplatAbstractions;
-
+import java.util.Random;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.particle.*;
+import net.minecraft.client.renderer.texture.TextureAtlas;
+import net.minecraft.client.renderer.texture.TextureManager;
+import net.minecraft.util.FastColor;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

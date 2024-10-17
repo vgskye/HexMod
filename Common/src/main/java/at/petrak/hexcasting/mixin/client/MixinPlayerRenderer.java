@@ -1,12 +1,10 @@
 package at.petrak.hexcasting.mixin.client;
 
+import at.petrak.hexcasting.api.client.ClientRenderHelper;
+import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-import at.petrak.hexcasting.api.client.ClientRenderHelper;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

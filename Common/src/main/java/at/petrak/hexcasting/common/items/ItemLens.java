@@ -1,7 +1,10 @@
 package at.petrak.hexcasting.common.items;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
+import at.petrak.hexcasting.common.lib.HexAttributes;
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
 import java.util.UUID;
-
 import net.minecraft.core.BlockSource;
 import net.minecraft.core.dispenser.OptionalDispenseItemBehavior;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -11,12 +14,6 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.DispenserBlock;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
-import at.petrak.hexcasting.common.lib.HexAttributes;
-
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -2,8 +2,6 @@ package at.petrak.hexcasting.common.casting.arithmetic.operator.vec;
 
 import static at.petrak.hexcasting.common.lib.hex.HexIotaTypes.VEC3;
 
-import java.util.List;
-
 import at.petrak.hexcasting.api.casting.arithmetic.operator.OperatorBasic;
 import at.petrak.hexcasting.api.casting.arithmetic.predicates.IotaMultiPredicate;
 import at.petrak.hexcasting.api.casting.arithmetic.predicates.IotaPredicate;
@@ -11,7 +9,7 @@ import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
 import at.petrak.hexcasting.api.casting.iota.DoubleIota;
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
-
+import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
 public class OperatorUnpack extends OperatorBasic {

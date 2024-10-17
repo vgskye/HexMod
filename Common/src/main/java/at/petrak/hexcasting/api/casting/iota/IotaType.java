@@ -1,11 +1,14 @@
 package at.petrak.hexcasting.api.casting.iota;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
+import com.mojang.datafixers.util.Pair;
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import javax.annotation.Nullable;
-
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.Font;
 import net.minecraft.nbt.CompoundTag;
@@ -15,11 +18,6 @@ import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.FormattedCharSequence;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.utils.HexUtils;
-import at.petrak.hexcasting.common.lib.hex.HexIotaTypes;
 
 // Take notes from ForgeRegistryEntry
 public abstract class IotaType<T extends Iota> {

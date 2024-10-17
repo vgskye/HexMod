@@ -1,5 +1,9 @@
 package at.petrak.hexcasting.common.blocks;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
+import at.petrak.hexcasting.api.pigment.FrozenPigment;
+import at.petrak.hexcasting.common.blocks.entity.BlockEntityConjured;
+import at.petrak.hexcasting.xplat.IForgeLikeBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -19,12 +23,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
-import at.petrak.hexcasting.api.pigment.FrozenPigment;
-import at.petrak.hexcasting.common.blocks.entity.BlockEntityConjured;
-import at.petrak.hexcasting.xplat.IForgeLikeBlock;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

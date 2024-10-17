@@ -2,13 +2,12 @@ package at.petrak.hexcasting.api.mod;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.misc.MediaConstants;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.stats.StatFormatter;
 import net.minecraft.stats.Stats;
-
-import at.petrak.hexcasting.api.misc.MediaConstants;
 
 public class HexStatistics {
 	public static final ResourceLocation MEDIA_USED =

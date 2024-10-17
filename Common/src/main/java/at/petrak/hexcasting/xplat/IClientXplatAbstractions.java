@@ -1,8 +1,10 @@
 package at.petrak.hexcasting.xplat;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.api.client.ClientCastingStack;
+import at.petrak.hexcasting.common.msgs.IMessage;
 import java.util.ServiceLoader;
 import java.util.stream.Collectors;
-
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.item.ItemPropertyFunction;
@@ -14,10 +16,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.AABB;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.api.client.ClientCastingStack;
-import at.petrak.hexcasting.common.msgs.IMessage;
 
 public interface IClientXplatAbstractions {
 	void sendPacketToServer(IMessage packet);

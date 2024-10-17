@@ -1,5 +1,10 @@
 package at.petrak.hexcasting.common.blocks.akashic;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
+import at.petrak.hexcasting.api.casting.iota.PatternIota;
+import at.petrak.hexcasting.common.items.storage.ItemScroll;
+import at.petrak.hexcasting.common.lib.HexSounds;
+import at.petrak.hexcasting.xplat.IForgeLikeBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundSource;
@@ -20,13 +25,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
-import at.petrak.hexcasting.api.casting.iota.PatternIota;
-import at.petrak.hexcasting.common.items.storage.ItemScroll;
-import at.petrak.hexcasting.common.lib.HexSounds;
-import at.petrak.hexcasting.xplat.IForgeLikeBlock;
-
 import org.jetbrains.annotations.Nullable;
 
 public class BlockAkashicBookshelf extends Block

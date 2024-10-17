@@ -1,7 +1,8 @@
 package at.petrak.hexcasting.common.lib;
 
+import at.petrak.hexcasting.api.HexAPI;
+import com.mojang.serialization.JsonOps;
 import java.util.OptionalInt;
-
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Block;
@@ -12,9 +13,6 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePla
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
-import com.mojang.serialization.JsonOps;
-
-import at.petrak.hexcasting.api.HexAPI;
 
 public class HexFeatureConfigs {
 	public static void dumpConfigs() {

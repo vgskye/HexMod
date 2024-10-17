@@ -1,9 +1,7 @@
 package at.petrak.hexcasting.api.item;
 
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADMediaHolder;
-
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.ApiStatus;
 
 /**

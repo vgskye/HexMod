@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.interop.utils;
 
-import java.util.List;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import com.mojang.datafixers.util.Pair;
-
 import at.petrak.hexcasting.api.misc.MediaConstants;
 import at.petrak.hexcasting.api.mod.HexConfig;
 import at.petrak.hexcasting.common.items.magic.ItemMediaBattery;
 import at.petrak.hexcasting.common.lib.HexBlocks;
 import at.petrak.hexcasting.common.lib.HexItems;
-
 import com.google.common.collect.Lists;
+import com.mojang.datafixers.util.Pair;
+import java.util.List;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 public class PhialRecipeStackBuilder {
 	private static ItemStack makeBattery(long unit, int size) {

@@ -1,5 +1,9 @@
 package at.petrak.hexcasting.common.blocks.circles.impetuses;
 
+import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
+import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
+import at.petrak.hexcasting.common.lib.HexBlockEntities;
+import at.petrak.hexcasting.common.lib.HexSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
@@ -12,11 +16,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
-
-import at.petrak.hexcasting.api.block.circle.BlockCircleComponent;
-import at.petrak.hexcasting.api.casting.circles.BlockEntityAbstractImpetus;
-import at.petrak.hexcasting.common.lib.HexBlockEntities;
-import at.petrak.hexcasting.common.lib.HexSounds;
 
 public class BlockEntityLookingImpetus extends BlockEntityAbstractImpetus {
 	public static final int MAX_LOOK_AMOUNT = 30;

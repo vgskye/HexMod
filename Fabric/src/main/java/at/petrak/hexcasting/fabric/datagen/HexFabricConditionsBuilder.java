@@ -1,23 +1,19 @@
 package at.petrak.hexcasting.fabric.datagen;
 
+import at.petrak.hexcasting.datagen.IXplatConditionsBuilder;
+import com.google.gson.JsonObject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-
+import net.fabricmc.fabric.api.resource.conditions.v1.ConditionJsonProvider;
+import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
+import net.fabricmc.fabric.impl.datagen.FabricDataGenHelper;
 import net.minecraft.advancements.CriterionTriggerInstance;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.RecipeSerializer;
-
-import net.fabricmc.fabric.api.resource.conditions.v1.ConditionJsonProvider;
-import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
-import net.fabricmc.fabric.impl.datagen.FabricDataGenHelper;
-
-import at.petrak.hexcasting.datagen.IXplatConditionsBuilder;
-
-import com.google.gson.JsonObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

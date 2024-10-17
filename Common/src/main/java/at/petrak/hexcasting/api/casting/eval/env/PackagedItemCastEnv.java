@@ -1,10 +1,5 @@
 package at.petrak.hexcasting.api.casting.eval.env;
 
-import java.util.List;
-
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.InteractionHand;
-
 import at.petrak.hexcasting.api.casting.eval.CastResult;
 import at.petrak.hexcasting.api.casting.eval.sideeffects.EvalSound;
 import at.petrak.hexcasting.api.casting.iota.PatternIota;
@@ -12,6 +7,9 @@ import at.petrak.hexcasting.api.pigment.FrozenPigment;
 import at.petrak.hexcasting.common.lib.hex.HexEvalSounds;
 import at.petrak.hexcasting.common.msgs.MsgNewSpiralPatternsS2C;
 import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import java.util.List;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.InteractionHand;
 
 public class PackagedItemCastEnv extends PlayerBasedCastEnv {
 

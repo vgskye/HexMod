@@ -1,12 +1,11 @@
 package at.petrak.hexcasting.common.blocks.decoration;
 
+import at.petrak.hexcasting.annotations.SoftImplement;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
-
-import at.petrak.hexcasting.annotations.SoftImplement;
 
 public class BlockAkashicLeaves extends LeavesBlock {
 	public BlockAkashicLeaves(Properties props) {

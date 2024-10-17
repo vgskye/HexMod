@@ -2,23 +2,19 @@ package at.petrak.hexcasting.forge.recipe;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParseException;
 import java.util.Arrays;
 import java.util.Objects;
 import javax.annotation.Nullable;
-
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
-
 import net.minecraftforge.common.crafting.AbstractIngredient;
 import net.minecraftforge.common.crafting.IIngredientSerializer;
-
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParseException;
 import org.jetbrains.annotations.NotNull;
 
 public class ForgeModConditionalIngredient extends AbstractIngredient {

@@ -1,17 +1,14 @@
 package at.petrak.hexcasting.fabric.cc.adimpl;
 
-import java.util.List;
-
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.addldata.ADHexHolder;
 import at.petrak.hexcasting.api.casting.iota.Iota;
 import at.petrak.hexcasting.api.item.HexHolderItem;
 import at.petrak.hexcasting.api.pigment.FrozenPigment;
 import at.petrak.hexcasting.fabric.cc.HexCardinalComponents;
-
 import dev.onyxstudios.cca.api.v3.item.ItemComponent;
+import java.util.List;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class CCHexHolder extends ItemComponent implements ADHexHolder {

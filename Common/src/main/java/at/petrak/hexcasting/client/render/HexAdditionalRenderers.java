@@ -1,8 +1,21 @@
 package at.petrak.hexcasting.client.render;
 
+import at.petrak.hexcasting.api.client.ScryingLensOverlayRegistry;
+import at.petrak.hexcasting.api.player.Sentinel;
+import at.petrak.hexcasting.api.utils.QuaternionfUtils;
+import at.petrak.hexcasting.client.ClientTickCounter;
+import at.petrak.hexcasting.common.lib.HexAttributes;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.google.common.collect.Lists;
+import com.mojang.blaze3d.platform.GlStateManager;
+import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.blaze3d.vertex.DefaultVertexFormat;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.Tesselator;
+import com.mojang.blaze3d.vertex.VertexFormat;
+import com.mojang.datafixers.util.Pair;
 import java.util.List;
 import java.util.function.BiConsumer;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -16,22 +29,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import com.mojang.blaze3d.platform.GlStateManager;
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.DefaultVertexFormat;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.Tesselator;
-import com.mojang.blaze3d.vertex.VertexFormat;
-import com.mojang.datafixers.util.Pair;
-
-import at.petrak.hexcasting.api.client.ScryingLensOverlayRegistry;
-import at.petrak.hexcasting.api.player.Sentinel;
-import at.petrak.hexcasting.api.utils.QuaternionfUtils;
-import at.petrak.hexcasting.client.ClientTickCounter;
-import at.petrak.hexcasting.common.lib.HexAttributes;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
-
-import com.google.common.collect.Lists;
 import org.joml.Vector3f;
 
 public class HexAdditionalRenderers {

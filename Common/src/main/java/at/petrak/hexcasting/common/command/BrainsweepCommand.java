@@ -1,14 +1,13 @@
 package at.petrak.hexcasting.common.command;
 
+import at.petrak.hexcasting.api.HexAPI;
+import at.petrak.hexcasting.xplat.IXplatAbstractions;
+import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.Mob;
-import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-
-import at.petrak.hexcasting.api.HexAPI;
-import at.petrak.hexcasting.xplat.IXplatAbstractions;
 
 public class BrainsweepCommand {
 	public static void add(LiteralArgumentBuilder<CommandSourceStack> cmd) {

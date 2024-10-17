@@ -8,10 +8,10 @@
  */
 package at.petrak.hexcasting.interop.patchouli;
 
+import at.petrak.hexcasting.api.HexAPI;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.CraftingRecipe;
@@ -19,9 +19,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
-
-import at.petrak.hexcasting.api.HexAPI;
-
 import vazkii.patchouli.api.IComponentProcessor;
 import vazkii.patchouli.api.IVariable;
 import vazkii.patchouli.api.IVariableProvider;

@@ -2,12 +2,11 @@ package at.petrak.hexcasting.common.msgs;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.phys.Vec3;
-
-import io.netty.buffer.ByteBuf;
 
 /** Sent server->client to synchronize OpBlink when the target is a player. */
 public record MsgBlinkS2C(Vec3 addedPosition) implements IMessage {

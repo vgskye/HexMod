@@ -1,14 +1,12 @@
 package at.petrak.hexcasting.common.blocks.akashic;
 
+import at.petrak.hexcasting.api.casting.iota.Iota;
+import at.petrak.hexcasting.api.casting.iota.IotaType;
+import at.petrak.hexcasting.api.casting.math.HexPattern;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-
-import at.petrak.hexcasting.api.casting.iota.Iota;
-import at.petrak.hexcasting.api.casting.iota.IotaType;
-import at.petrak.hexcasting.api.casting.math.HexPattern;
-
 import org.jetbrains.annotations.Nullable;
 
 public class BlockAkashicRecord extends Block {

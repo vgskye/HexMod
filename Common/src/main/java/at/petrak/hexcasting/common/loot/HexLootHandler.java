@@ -2,10 +2,9 @@ package at.petrak.hexcasting.common.loot;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import com.google.common.collect.ImmutableList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
-
-import com.google.common.collect.ImmutableList;
 
 // https://github.com/VazkiiMods/Botania/blob/1.18.x/Xplat/src/main/java/vazkii/botania/common/loot/LootHandler.java
 // We need to inject dungeon loot (scrolls and lore), make amethyst drop fewer shards, and the extra

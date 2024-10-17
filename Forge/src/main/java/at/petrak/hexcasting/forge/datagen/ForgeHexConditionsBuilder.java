@@ -1,21 +1,17 @@
 package at.petrak.hexcasting.forge.datagen;
 
+import at.petrak.hexcasting.datagen.IXplatConditionsBuilder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
-
 import net.minecraft.advancements.CriterionTriggerInstance;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-
 import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.ICondition;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-
-import at.petrak.hexcasting.datagen.IXplatConditionsBuilder;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

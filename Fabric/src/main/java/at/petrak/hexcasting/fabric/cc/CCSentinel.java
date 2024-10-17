@@ -1,18 +1,15 @@
 package at.petrak.hexcasting.fabric.cc;
 
+import at.petrak.hexcasting.api.player.Sentinel;
+import at.petrak.hexcasting.api.utils.HexUtils;
+import dev.onyxstudios.cca.api.v3.component.Component;
+import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
 import javax.annotation.Nullable;
-
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
-
-import at.petrak.hexcasting.api.player.Sentinel;
-import at.petrak.hexcasting.api.utils.HexUtils;
-
-import dev.onyxstudios.cca.api.v3.component.Component;
-import dev.onyxstudios.cca.api.v3.component.sync.AutoSyncedComponent;
 
 public class CCSentinel implements Component, AutoSyncedComponent {
 	public static final String TAG_HAS_SENTINEL = "has_sentinel",

@@ -1,11 +1,10 @@
 package at.petrak.hexcasting.common.command;
 
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.Commands;
+import at.petrak.hexcasting.client.render.PatternTextureManager;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-
-import at.petrak.hexcasting.client.render.PatternTextureManager;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
 
 public class PatternTexturesCommand {
 	public static void add(LiteralArgumentBuilder<CommandSourceStack> cmd) {

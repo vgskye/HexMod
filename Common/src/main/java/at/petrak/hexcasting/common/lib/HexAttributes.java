@@ -2,15 +2,13 @@ package at.petrak.hexcasting.common.lib;
 
 import static at.petrak.hexcasting.api.HexAPI.modLoc;
 
+import at.petrak.hexcasting.api.HexAPI;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
-
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
-
-import at.petrak.hexcasting.api.HexAPI;
 
 /** On forge: these are setup in ForgeHexInit On fabric: it's a mixin */
 public class HexAttributes {

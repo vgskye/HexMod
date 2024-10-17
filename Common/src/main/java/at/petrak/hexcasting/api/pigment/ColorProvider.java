@@ -1,9 +1,8 @@
 package at.petrak.hexcasting.api.pigment;
 
+import at.petrak.hexcasting.api.addldata.ADPigment;
 import net.minecraft.util.FastColor;
 import net.minecraft.world.phys.Vec3;
-
-import at.petrak.hexcasting.api.addldata.ADPigment;
 
 public abstract class ColorProvider {
 	/** Implers, impl this function */

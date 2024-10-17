@@ -1,10 +1,11 @@
 package at.petrak.hexcasting.api.client;
 
+import com.google.common.collect.Lists;
+import com.mojang.datafixers.util.Pair;
 import java.util.List;
 import java.util.Vector;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -15,9 +16,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import com.mojang.datafixers.util.Pair;
-
-import com.google.common.collect.Lists;
 import org.jetbrains.annotations.NotNull;
 
 /**

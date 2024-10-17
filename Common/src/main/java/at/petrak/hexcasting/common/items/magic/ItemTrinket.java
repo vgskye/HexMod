@@ -2,10 +2,9 @@ package at.petrak.hexcasting.common.items.magic;
 
 import static at.petrak.hexcasting.common.items.storage.ItemFocus.NUM_VARIANTS;
 
-import net.minecraft.world.item.ItemStack;
-
 import at.petrak.hexcasting.api.item.VariantItem;
 import at.petrak.hexcasting.api.mod.HexConfig;
+import net.minecraft.world.item.ItemStack;
 
 public class ItemTrinket extends ItemPackagedHex implements VariantItem {
 	public ItemTrinket(Properties pProperties) {
