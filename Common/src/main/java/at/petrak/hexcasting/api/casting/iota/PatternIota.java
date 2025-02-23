@@ -4,6 +4,7 @@ import at.petrak.hexcasting.api.HexAPI;
 import at.petrak.hexcasting.api.casting.ActionRegistryEntry;
 import at.petrak.hexcasting.api.casting.PatternShapeMatch;
 import at.petrak.hexcasting.api.casting.castables.Action;
+import at.petrak.hexcasting.api.casting.castables.UncachableSpecialHandler;
 import at.petrak.hexcasting.api.casting.eval.CastResult;
 import at.petrak.hexcasting.api.casting.eval.ResolvedPatternType;
 import at.petrak.hexcasting.api.casting.eval.sideeffects.OperatorSideEffect;
@@ -38,6 +39,10 @@ import java.util.function.Supplier;
 import static at.petrak.hexcasting.api.utils.HexUtils.isOfTag;
 
 public class PatternIota extends Iota {
+    // Spooky internal mutability!
+    private PatternShapeMatch cachedMatch;
+    private Action cachedAction;
+
     public PatternIota(@NotNull HexPattern pattern) {
         super(HexIotaTypes.PATTERN, pattern);
     }
@@ -71,11 +76,17 @@ public class PatternIota extends Iota {
     public @NotNull CastResult execute(CastingVM vm, ServerLevel world, SpellContinuation continuation) {
         Supplier<@Nullable Component> castedName = () -> null;
         try {
-            var lookup = PatternRegistryManifest.matchPattern(this.getPattern(), vm.getEnv(), false);
+            var lookup = cachedMatch;
+            if (lookup == null) {
+                lookup = PatternRegistryManifest.matchPattern(this.getPattern(), vm.getEnv(), false);
+            }
             vm.getEnv().precheckAction(lookup);
 
             Action action;
-            if (lookup instanceof PatternShapeMatch.Normal || lookup instanceof PatternShapeMatch.PerWorld) {
+            if (cachedAction != null) {
+                action = cachedAction;
+            } else if (lookup instanceof PatternShapeMatch.Normal || lookup instanceof PatternShapeMatch.PerWorld) {
+                cachedMatch = lookup;
                 ResourceKey<ActionRegistryEntry> key;
                 if (lookup instanceof PatternShapeMatch.Normal normal) {
                     key = normal.key;
@@ -94,9 +105,17 @@ public class PatternIota extends Iota {
                     // this gets caught down below
                     throw new MishapUnenlightened();
                 }
+
+                if (!reqsEnlightenment) {
+                    cachedAction = action;
+                }
             } else if (lookup instanceof PatternShapeMatch.Special special) {
                 castedName = special.handler::getName;
                 action = special.handler.act();
+                if (!(special.handler instanceof UncachableSpecialHandler)) {
+                    cachedMatch = lookup;
+                    cachedAction = action;
+                }
             } else if (lookup instanceof PatternShapeMatch.Nothing) {
                 throw new MishapInvalidPattern();
             } else throw new IllegalStateException();
